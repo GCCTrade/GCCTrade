@@ -766,8 +766,6 @@ function businessExploreButtons() {
 // filter title Updater
 function filterCategoryTitleUpdater(state) {
     if (titleOfDropdowns) {
-        console.log(titleOfDropdowns)
-
         const categoryTitle = document.querySelector(`.explorer-filter .filter-categories .filter-selector span`)
         if (state === true) {
             categoryTitle.dataset.lang = titleOfDropdowns.allCategory;
@@ -783,15 +781,14 @@ function filterCategoryTitleUpdater(state) {
 function filterProductTitleUpdater(state) {
     if (titleOfDropdowns) {
         // console.log(titleOfDropdowns)
-
-        const categoryTitle = document.querySelector(`.explorer-filter .filter-products .filter-selector span`)
+        const productTitle = document.querySelector(`.explorer-filter .filter-products .filter-selector span`)
         if (state === true) {
-            categoryTitle.dataset.lang = titleOfDropdowns.allProducts;
-            categoryTitle.innerText = categoryTitle.dataset.lang;
+            productTitle.dataset.lang = titleOfDropdowns.allProduct;
+            productTitle.innerText = productTitle.dataset.lang;
         }
         else {
-            categoryTitle.dataset.lang = titleOfDropdowns.selected;
-            categoryTitle.innerText = categoryTitle.dataset.lang;
+            productTitle.dataset.lang = titleOfDropdowns.selected;
+            productTitle.innerText = productTitle.dataset.lang;
         }
     }
 }

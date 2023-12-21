@@ -1,0 +1,342 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Agriculture and Animal Husbandry",
+      "slug": "agriculture-and-animal-husbandry",
+      "subcategories": [
+        {
+          "id": 101,
+          "title": "Wheat",
+          "slug": "wheat"
+        },
+        {
+          "id": 102,
+          "title": "Vegetables",
+          "slug": "vegetables"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mining",
+      "slug": "mining",
+      "subcategories": [
+        {
+          "id": 201,
+          "title": "Carbon",
+          "slug": "carbon"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Textile Industry",
+      "slug": "textile-industry",
+      "subcategories": [
+        {
+          "id": 301,
+          "title": "Fabric",
+          "slug": "fabric"
+        },
+        {
+          "id": 302,
+          "title": "Yarn",
+          "slug": "yarn"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Wood and MDF",
+      "slug": "wood-and-MDF",
+      "subcategories": [
+        {
+          "id": 401,
+          "title": "Cabinets",
+          "slug": "cabinets"
+        },
+        {
+          "id": 402,
+          "title": "Ash Wood",
+          "slug": "ash-wood"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Paper",
+      "slug": "paper",
+      "subcategories": [
+        {
+          "id": 501,
+          "title": "Writing Paper",
+          "slug": "writing-paper"
+        },
+        {
+          "id": 502,
+          "title": "Cardboard",
+          "slug": "cardboard"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Oil and Gas",
+      "slug": "oil-and-gas",
+      "subcategories": [
+        {
+          "id": 601,
+          "title": "Crude Oil",
+          "slug": "crude-oil"
+        },
+        {
+          "id": 602,
+          "title": "Gasoline",
+          "slug": "gasoline"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Steel",
+      "slug": "steel",
+      "subcategories": [
+        {
+          "id": 701,
+          "title": "Raw Steel",
+          "slug": "raw-steel"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Machinery and Equipment",
+      "slug": "machinery-and-equipment",
+      "subcategories": [
+        {
+          "id": 801,
+          "title": "Laser Cutting Machine",
+          "slug": "laser-cutting-machine"
+        },
+        {
+          "id": 802,
+          "title": "CNC Machine",
+          "slug": "cnc-machine"
+        },
+        {
+          "id": 803,
+          "title": "Tractor",
+          "slug": "tractor"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Cars and Spare Parts",
+      "slug": "cars-and-spare-parts",
+      "subcategories": [
+        {
+          "id": 901,
+          "title": "Gearbox",
+          "slug": "gearbox"
+        },
+        {
+          "id": 902,
+          "title": "Double Relay",
+          "slug": "double-relay"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Furniture and Decoration",
+      "slug": "furniture-and-decoration",
+      "subcategories": [
+        {
+          "id": 1001,
+          "title": "Upholstery Fabric",
+          "slug": "upholstery-fabric"
+        },
+        {
+          "id": 1002,
+          "title": "Furniture Paint",
+          "slug": "furniture-paint"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Food Products",
+      "slug": "food-products",
+      "subcategories": [
+        {
+          "id": 1101,
+          "title": "Tomato Paste",
+          "slug": "tomato-paste"
+        },
+        {
+          "id": 1102,
+          "title": "Industrial Bread",
+          "slug": "industrial-bread"
+        },
+        {
+          "id": 1103,
+          "title": "Dairy Products",
+          "slug": "dairy-products"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Medicine and Health",
+      "slug": "medicine-and-health",
+      "subcategories": [
+        {
+          "id": 1201,
+          "title": "Skin",
+          "slug": "skin"
+        },
+        {
+          "id": 1202,
+          "title": "Herbal",
+          "slug": "herbal"
+        },
+        {
+          "id": 1203,
+          "title": "Chemical",
+          "slug": "chemical"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Chemical Products",
+      "slug": "chemical-products",
+      "subcategories": [
+        {
+          "id": 1301,
+          "title": "Acid",
+          "slug": "acid"
+        },
+        {
+          "id": 1302,
+          "title": "Oil-based Paint",
+          "slug": "oil-based-paint"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Building Materials",
+      "slug": "building-materials",
+      "subcategories": [
+        {
+          "id": 1401,
+          "title": "Cement",
+          "slug": "cement"
+        },
+        {
+          "id": 1402,
+          "title": "Plaster",
+          "slug": "plaster"
+        },
+        {
+          "id": 1403,
+          "title": "Ceramic",
+          "slug": "ceramic"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Medical Equipment",
+      "slug": "medical-equipment",
+      "subcategories": [
+        {
+          "id": 1501,
+          "title": "Blood Pressure Monitor",
+          "slug": "blood-pressure-monitor"
+        },
+        {
+          "id": 1502,
+          "title": "Retinoscope",
+          "slug": "retinoscope"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Household Appliances",
+      "slug": "household-appliances",
+      "subcategories": [
+        {
+          "id": 1601,
+          "title": "Refrigerator",
+          "slug": "refrigerator"
+        },
+        {
+          "id": 1602,
+          "title": "Gas Stove",
+          "slug": "gas-stove"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Clothing, Bags, and Shoes",
+      "slug": "clothing-bags-and-shoes",
+      "subcategories": [
+        {
+          "id": 1701,
+          "title": "Coat and Pants",
+          "slug": "coat-and-pants"
+        },
+        {
+          "id": 1702,
+          "title": "Shirt",
+          "slug": "shirt"
+        },
+        {
+          "id": 1703,
+          "title": "Shoes",
+          "slug": "shoes"
+        },
+        {
+          "id": 1704,
+          "title": "Bag",
+          "slug": "bag"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Sports and Recreation",
+      "slug": "sports-and-recreation",
+      "subcategories": [
+        {
+          "id": 1801,
+          "title": "Sports Complexes",
+          "slug": "sports-complexes"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Petrochemicals",
+      "slug": "petrochemicals",
+      "subcategories": [
+        {
+          "id": 1901,
+          "title": "Methanol",
+          "slug": "methanol"
+        },
+        {
+          "id": 1902,
+          "title": "Propylene",
+          "slug": "propylene"
+        }
+      ]
+    }
+  ]
+}

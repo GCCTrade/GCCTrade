@@ -1,0 +1,71 @@
+{
+  "info": {
+    "defaultLang": "true",
+    "direction": "ltr",
+    "language": "en",
+    "referral": "ivo-1",
+    "ivoCode": "ivo-1001",
+    "ivoQRCode": "resources/information/businesses/businessesList/linkedivo/images/linkedivo-qr-code.svg",
+    "id": "1001",
+    "userName": "linkedivo",
+    "name": "linkedivo",
+    "slogan": "حيث تحدث الاتصالات",
+    "metaDescription": "Linkedivo هي منصة اتصالات أعمال ثورية مصممة لربط الشركات والأفراد، وتوفير طريقة بسيطة وفعالة للعثور على احتياجاتهم والتواصل مع المحترفين ذوي الأفكار المماثلة.",
+    "country": "كندا",
+    "province": "أونتاريو",
+    "city": "تورونتو",
+    "url": "https://linkedivo.com",
+    "email": "info@linkedivo.com",
+    "phone": "+1 213 772 805",
+    "logo": "resources/information/businesses/businessesList/linkedivo/images/linkedivo-logo.png",
+    "mainField": ["تكنولوجيا المعلومات", "التسويق"]
+  },
+  "overview": {
+    "summary": "Linkedivo هي منصة اتصالات أعمال ثورية مصممة لربط الشركات والأفراد، وتوفير طريقة بسيطة وفعالة للعثور على احتياجاتهم والتواصل مع المحترفين ذوي الأفكار المماثلة. تعمل منصتنا كمركز شامل، وتسهل التعاونات السلسة وفتح فرص جديدة للنمو والنجاح.",
+    "videoID": "https://www.youtube.com/embed/X-jdl9hcCeg?si=9MNAeJV_Lp8wxHKB",
+    "videoCover": "resources/information/businesses/businessesList/linkedivo/images/video-cover.webp",
+    "mission": "مهمتنا هي توفير منصة سهلة الاستخدام تبسط الاتصالات التجارية، مما يجعل من السهل على المستخدمين اكتشاف الشركات والتواصل معها. نحن نسعى لإنشاء بيئة حيث يمكن للأفراد والمنظمات العثور بسهولة على احتياجاتهم، وتشكيل شراكات استراتيجية، وفتح فرص جديدة للنمو والنجاح.",
+    "vision": "لإنشاء منصة للشبكات التجارية تبسط الاتصالات، مما يجعل من السهل على الأفراد والمنظمات العثور على الشركات وشراكتها. نحن نتصور مركزًا عالميًا حيث يكون العثور على الحلول الصحيحة وتشكيل شراكات قيمة أمرًا سهلاً، مما يمكن الشركات من الازدهار والنمو.",
+    "values": "<strong>التبسيط:<strong> نحن ملتزمون بتبسيط عملية الاتصالات التجارية، والتخلص من التعقيدات، وتوفير تجربة سلسة للمستخدمين للعثور والتواصل مع الشركات المناسبة.<br><strong>الوصولية:<strong> نحن نؤمن بإنشاء منصة شاملة تكون متاحة للمستخدمين من جميع الخلفيات والمواقع والصناعات. هدفنا هو ربط الشركات والأفراد على المستوى العالمي، بغض النظر عن موقعهم الجغرافي.<br><strong>التمكين:<strong> نحن نمكن المستخدمين من خلال تزويدهم بالأدوات والموارد والرؤى اللازمة لاتخاذ قرارات مستنيرة وتشكيل شراكات ذات مغزى تعزز أعمالهم للأمام.<br><strong>الثقة والشفافية:<strong> نحن نعزز بيئة الثقة والشفافية، مضمنين أن الشركات تقدم أنفسها بدقة ويمكن للمستخدمين الاعتماد على المعلومات الأصيلة لإجراء اتصالات تتوافق مع احتياجاتهم وأهدافهم.<br><strong>الابتكار:<strong> نحن نتبنى الابتكار لتعزيز منصتنا باستمرار، باستغلال التقنيات الناشئة وملاحظات المستخدمين لتوفير تجربة تطورية وحديثة تلبي المطالب المتغيرة باستمرار لشبكات الأعمال."
+  },
+  "services": {
+    "service1": {
+      "title": "دليل الأعمال",
+      "description": "صناعة الشبكات التجارية وسوق الأعمال B2B/C2B تشهد نموًا كبيرًا وتقدم فرصًا هائلة لـ Linkedivo."
+    }
+  },
+  "contacts": {
+    "address": "الرقم 24، شارع الابتكار، تورونتو، كندا",
+    "phone": "+1 213 772 0805",
+    "email": "info@linkedivo.com",
+    "website": "https://linkedivo.com",
+    "socialMedia": {
+      "linkedivo": "https://linkedivo.com/linkedivo",
+      "instagram": "https://instagram.com/linkedivo",
+      "facebook": "https://facebook.com/linkedivo",
+      "linkedin": "https://linkedin.com/linkedivo",
+      "whatsapp": "https://wa.me/+96891711527",
+      "telegram": "https://t.me/+96891711527",
+      "youtube": "https://youtube.com/linkedivo",
+      "twitter": "https://x.com/linkedivo"
+    },
+    "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10662884.764945788!2d-84.74963605!3d49.2717859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Canada!5e0!3m2!1sen!2som!4v1700084501440!5m2!1sen!2som"
+  },
+  "gallery": {
+    "gallery1": {
+      "title": "تسويق الأعمال",
+      "description": "تستهدف منصة Linkedivo جمهورًا متنوعًا يشمل الشركات من مختلف الأحجام ورواد الأعمال وأصحاب العمل الحر والمحترفين الذين يبحثون عن اتصالات B2B و C2B."
+    }
+  },
+  "moreInfo": {
+    "moreInfo1": {
+      "title": "تحميل ملف الشركة 1",
+      "link": "https://www.africau.edu/images/default/sample.pdf",
+      "description": "وصف الخدمة 1"
+    }
+  },
+  "categories": {
+    "IT": ["برمجة", "تصميم ويب"],
+    "Marketing": ["التسويق الرقمي", "الإعلان", "الطباعة"]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "info": {
+    "defaultLang": "true",
+    "direction": "rtl",
+    "language": "en",
+    "referral": "ivo-7",
+    "ivoCode": "ivo-1002",
+    "ivoQRCode": "/resources/information/businesses/businessesList/navan/images/ivo-1000.svg",
+    "id": "1002",
+    "userName": "navan",
+    "name": "navan",
+    "slogan": "فكّر في التصميم، وصمم التفكير",
+    "metaDescription": "في نافان، نحن لسنا مجرد وكالة تسويق رقمي؛ بل نحن شريكك المخلص في تحقيق النجاح الرقمي.",
+    "country": "عمان",
+    "province": "مسقط",
+    "city": "مسقط",
+    "url": "https://navan.one",
+    "email": "info@navan.one",
+    "phone": "+968 9176 1527",
+    "logo": "/resources/information/businesses/businessesList/navan/images/navan-logo.png",
+    "mainField": ["تكنولوجيا المعلومات", "التسويق"]
+  },
+  "overview": {
+    "summary": "نحن وكالة تسويق رقمي نساعد الشركات بجميع الأحجام على تحقيق أهدافها في التسويق عبر الإنترنت. يتخصص خبراؤنا في تصميم الويب وتحسين محركات البحث والتسويق عبر وسائل التواصل الاجتماعي وإنشاء المحتوى. دعونا نساعدك في التميّز في الفضاء الرقمي المزدحم ونمنح عملك النمو.",
+    "videoID": "https://www.youtube.com/embed/X-jdl9hcCeg?si=9MNAeJV_Lp8wxHKB",
+    "videoCover": "resources/information/businesses/businessesList/navan/images/video-cover.webp",
+    "mission": "مهمتنا في نافان هي توفير حلول رقمية مخصصة للشركات تفوق توقعاتها. نحن ملتزمون بأن نكون شريكًا موثوقًا يقدم استراتيجيات إبداعية ومبتكرة ومحدّثة تدعم عملائنا في تحقيق أهداف نموهم وتوسيعهم.",
+    "vision": "رؤيتنا هي تمكين الشركات من خلال حلول رقمية مخصصة. نحن نهدف إلى أن نكون القوة الدافعة وراء مواقع الويب للعلامات التجارية التي تعزز النمو والتطوير والتوسع. من خلال وضع استراتيجيات رقمية ذات تأثير، نطمح إلى مساعدة الشركات على الازدهار وبلوغ إمكاناتها الكاملة في المشهد الرقمي المتطور.",
+    "values": "في نافان، نحن لسنا مجرد وكالة تسويق رقمي؛ بل نحن شريكك المخلص في تحقيق النجاح الرقمي. إليك أسباب مقنعة لاختيارنا: التميّز: التزامنا بتقديم التميّز في كل جانب من جوانب عملنا يضمن النتائج عالية الجودة لعلامتك التجارية. ابتداءً من التصميم إلى الاستراتيجية، توقع نتائج متميزة. الإبداع: نزدهر على الإبداع، حيث نعتبره ركن الابتكار. من خلال تجاوز الحدود، نصنع حلولًا رقمية فريدة وذات تأثير يميز علامتك التجارية. التعاون: يجمع نهجنا التعاوني بين وجهات النظر المتنوعة لتحقيق نتائج استثنائية لعلامتك التجارية. تجمع أفكارك ورؤيتك، بالإضافة إلى خبرتنا، لخلق سحر رقمي. النزاهة: النزاهة هي أساس تفاعلاتنا مع العملاء والشركاء. يمكنك الاعتماد علينا من أجل الصدق والأخلاق والشفافية الثابتة في كل خطوة من رحلتنا معًا. القابلية للتكيّف: في المشهد الرقمي المتطور باستمرار، نرحب بالتغيير ونبقى في طليعة الاتجاهات والتكنولوجيات الصناعية. يمكنك الاعتماد علينا للحصول على أحدث الحلول ذات الصلة والتقنيات الحديثة. التوجّه نحو العميل: احتياجاتك الفريدة هي أولويتنا. نحن نتجاوز التوقعات لفهم أهداف وطموحات علامتك التجارية، مضمونين بأن نقدم نهجًا مصممًا خصيصًا يتجاوز توقعاتك. النتائج المحددة: يُقاس نجاحنا بالقيمة الملموسة التي نضيفها لعملك. نحن ملتزمون بمساعدتك في تحقيق أهدافك الرقمية ومشاهدة ازدهار علامتك في العالم الرقمي. اختر نافان كشريكك في التسويق الرقمي، ومعًا، سنحول تطلعاتك الرقمية إلى واقع مُنتصر."
+  },
+  "services": {
+    "service1": {
+      "title": "العلامة التجارية",
+      "description": "إنشاء هويات علامات تجارية تُدرك وتعنى.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service1.svg"
+    },
+    "service2": {
+      "title": "تصميم الويب",
+      "description": "تطوير مواقع ويب سهلة الاستخدام تدفع بالتحويلات.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service2.svg"
+    },
+    "service3": {
+      "title": "تصميم الجرافيك",
+      "description": "رفع الهوية البصرية والتواصل بفعالية.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service3.svg"
+    },
+    "service4": {
+      "title": "تحسين محركات البحث",
+      "description": "زيادة الرؤية على الإنترنت ودفع حركة المرور إلى الموقع الإلكتروني.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service4.svg"
+    },
+    "service5": {
+      "title": "التسويق في محركات البحث",
+      "description": "زيادة الوعي بالعلامة التجارية باستخدام الإعلانات المدفوعة في البحث.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service5.svg"
+    },
+    "service6": {
+      "title": "خدمات Google",
+      "description": "دفع حركة المرور المستهدفة وتحقيق أقصى عائد على الاستثمار.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service6.svg"
+    },
+    "service7": {
+      "title": "حملة التسويق",
+      "description": "تحقيق نتائج قابلة للقياس وتجاوز أهداف الأعمال.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service7.svg"
+    },
+    "service8": {
+      "title": "وسائل التواصل الاجتماعي",
+      "description": "بناء مجتمعات وزيادة الولاء للعلامة التجارية.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service8.svg"
+    },
+    "service9": {
+      "title": "إنتاج المحتوى",
+      "description": "إنشاء محتوى جذاب وقابل للمشاركة.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service9.svg"
+    },
+    "service10": {
+      "title": "تطبيقات الجوال",
+      "description": "تجارب متنقلة بديهية تحقق الأفكار.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service10.svg"
+    },
+    "service11": {
+      "title": "إدارة العلاقات مع العملاء (CRM)",
+      "description": "المشاركة الشخصية للتواصلات المستدامة.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service11.svg"
+    },
+    "service12": {
+      "title": "التجارة الإلكترونية",
+      "description": "منصات مبتكرة لتجارب شراء عبر الإنترنت جذابة.",
+      "image": "/resources/information/businesses/businessesList/navan/images/service12.svg"
+    }
+  },
+  "contacts": {
+    "address": "رقم 24، شارع الابتكار، تورنتو، كندا",
+    "phone": "+1 213 772 0805",
+    "email": "info@navan.one",
+    "website": "https://navan.one",
+    "socialMedia": {
+      "linkedivo": "https://linkedivo.com/navan",
+      "instagram": "https://instagram.com/navan",
+      "facebook": "https://facebook.com/navan",
+      "linkedin": "https://linkedin.com/navan",
+      "whatsapp": "https://wa.me/+96891761527",
+      "telegram": "https://t.me/+96891761527",
+      "youtube": "https://youtube.com/navan",
+      "twitter": "https://x.com/navan"
+    },
+    "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10662884.764945788!2d-84.74963605!3d49.2717859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Canada!5e0!3m2!1sen!2som!4v1700084501440!5m2!1sen!2som"
+  },
+  "gallery": {
+    "gallery1": {
+      "title": "عنوان المشروع 1",
+      "description": "وصف المشروع 1",
+      "image": "resources/information/businesses/businessesList/navan/images/service-1.png"
+    },
+    "gallery2": {
+      "title": "عنوان المشروع 2",
+      "description": "وصف المشروع 2",
+      "image": "resources/information/businesses/businessesList/navan/images/service-2.png"
+    }
+  },
+  "moreInfo": {
+    "moreInfo1": {
+      "title": "تحميل ملف الشركة 1",
+      "link": "https://www.africau.edu/images/default/sample.pdf",
+      "description": "وصف الخدمة 1",
+      "image": "resources/information/businesses/businessesList/navan/images/service-1.png"
+    }
+  },
+  "categories": {
+    "تكنولوجيا المعلومات": ["البرمجة", "تصميم الويب"],
+    "التسويق": ["التسويق الرقمي", "الإعلانات", "الطباعة"]
+  }
+}

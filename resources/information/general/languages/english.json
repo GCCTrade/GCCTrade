@@ -1,0 +1,32 @@
+{
+  "english": {
+    "joinAsProducer": "Join As Producer",
+    "aboutGccButton": "About GCCTrade",
+    "exploreButton": "Explore More",
+    "english": "English",
+    "persian": "فارسی",
+    "arabic": "العربية",
+    "searchPlaceHolder": "Search product...",
+    "slogan": "GCC Trade, Your Path to Arab Markets",
+    "copyRights": "All Right Reserved for GCC Trade",
+    "termsCondistions": "Terms and Conditions",
+    "privacyPolicies": "Privacy Policies",
+
+    "explorerPageTitle": "Product Explorer",
+    "products": "All Products",
+    "categories": "All Categories",
+    "selected": "Selected",
+    "categoryFood": "Food",
+    "categoryWood": "Wood",
+    "productRestaurant": "Restauran",
+    "productFastfood": "FastFood",
+    "productMDF": "MDF",
+    "productLetron": "Letron",
+
+    "overview": "Overview",
+    "product": "Products",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "moreInfo": "More Info"
+  }
+}

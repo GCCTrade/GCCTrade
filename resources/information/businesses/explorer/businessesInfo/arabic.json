@@ -1,0 +1,58 @@
+{
+  "id1001": {
+    "id": "1001",
+    "userName": "linkedivo",
+    "name": "لينكديفو",
+    "title": "دليل الأعمال",
+    "slogan": "حيث يحدث الاتصال",
+    "country": "كندا",
+    "province": "أونتاريو",
+    "city": "تورونتو",
+    "logo": "resources/information/businesses/businessesList/linkedivo/images/linkedivo-logo.png",
+    "categories": [6, 19],
+    "products": [601, 602, 1901, 1902],
+    "metaDescription": "لينكديفو هو منصة شبكية تجارية ثورية مصممة لربط الشركات والأفراد، وتوفير طريقة بسيطة وفعالة للعثور على احتياجاتهم والتواصل مع المحترفين ذوي الأفكار المماثلة. تعمل منصتنا كمركز شامل، تسهل التعاون السلس وتفتح فرصًا جديدة للنمو والنجاح."
+  },
+  "id1002": {
+    "id": "1002",
+    "userName": "navan",
+    "name": "نافان",
+    "title": "وكالة التسويق الرقمي",
+    "slogan": "فكر التصميم، صمم التفكير",
+    "country": "عُمان",
+    "province": "مسقط",
+    "city": "مسقط",
+    "logo": "resources/information/businesses/businessesList/navan/images/navan-logo.png",
+    "categories": [5, 2],
+    "products": [501, 201],
+    "metaDescription": "في نافان، نحن لسنا مجرد وكالة للتسويق الرقمي؛ نحن شريكك المُخلص في تحقيق النجاح الرقمي."
+  },
+  "id1003": {
+    "id": "1003",
+    "userName": "ies",
+    "name": "حلول التجارة الإلكترونية المبتكرة",
+    "title": "برمجيات التصميم والبرمجة",
+    "slogan": "استمسك بالمستقبل الآن",
+    "country": "عُمان",
+    "province": "مسقط",
+    "city": "مسقط",
+    "logo": "resources/information/businesses/businessesList/ies/images/ies-logo.png",
+    "categories": [1, 3],
+    "products": [101, 301],
+    "metaDescription": "في IES، نحن لسنا مجرد وكالة للتسويق الرقمي؛ نحن شريكك المُخلص في تحقيق النجاح الرقمي."
+  },
+  "id1004": {
+    "id": "1004",
+    "userName": "learnivo",
+    "name": "ليرنايفو",
+    "title": "نظام إدارة التعلم",
+    "slogan": "فتح الإمكانات، تمكين المستقبل",
+    "country": "إيران",
+    "province": "طهران",
+    "city": "طهران",
+    "logo": "resources/information/businesses/businessesList/learnivo/images/learnivo-logo.png",
+    "categories": [1, 2, 4, 18],
+    "products": [101, 102, 401, 1801],
+    "metaDescription": "في ليرنايفو، اغمر في عالم التعلم الشامل عبر الإنترنت، متخصصة في البرمجة والروبوتات وتدريب اللغات. قم بتمكين نفسك من خلال دورات حديثة، وتجارب شخصية، ومجتمع نابض بالحياة. ابدأ رحلتك نحو التمكن اليوم."
+  }
+}

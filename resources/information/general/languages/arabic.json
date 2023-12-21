@@ -1,0 +1,32 @@
+{
+  "arabic": {
+    "joinAsProducer": "الانضمام كمُنتج",
+    "aboutGccButton": "حول GCCTrade",
+    "exploreButton": "استكشاف المزيد",
+    "english": "English",
+    "persian": "فارسی",
+    "arabic": "العربية",
+    "searchPlaceHolder": "البحث عن المنتج...",
+    "slogan": "تجارة GCC، طريقك إلى أسواق العربية",
+    "copyRights": "كل الحقوق محفوظة لـ GCC Trade",
+    "termsCondistions": "الشروط والأحكام",
+    "privacyPolicies": "سياسات الخصوصية",
+
+    "explorerPageTitle": "مستكشف المنتجات",
+    "products": "جميع المنتجات",
+    "categories": "جميع الفئات",
+    "selected": "المحدد",
+    "categoryFood": "الطعام",
+    "categoryWood": "الخشب",
+    "productRestaurant": "مطعم",
+    "productFastfood": "وجبات سريعة",
+    "productMDF": "ألواح الوسائط الكثافة",
+    "productLetron": "ليترون",
+
+    "overview": "نظرة عامة",
+    "product": "المنتجات",
+    "contact": "الاتصال",
+    "gallery": "المعرض",
+    "moreInfo": "مزيد من المعلومات"
+  }
+}

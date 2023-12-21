@@ -1,0 +1,74 @@
+{
+  "info": {
+    "defaultLang": "true",
+    "direction": "ltr",
+    "language": "en",
+    "referral": "ivo-1",
+    "ivoCode": "ivo-1001",
+    "ivoQRCode": "resources/information/businesses/businessesList/linkedivo/images/linkedivo-qr-code.svg",
+    "id": "1001",
+    "userName": "linkedivo",
+    "name": "لینکدیوو",
+    "slogan": "جایی که ارتباطات رخ می‌دهد",
+    "metaDescription": "Linkedivo یک پلتفرم شبکه‌سازی تجاری انقلابی است که برای اتصال کسب و کارها و افراد طراحی شده است و راهی ساده و کارآمد برای یافتن نیازهای خود و ارتباط با حرفه‌ایان با دیدگاه مشابه فراهم می‌کند.",
+    "country": "کانادا",
+    "province": "اونتاریو",
+    "city": "تورنتو",
+    "url": "https://linkedivo.com",
+    "email": "info@linkedivo.com",
+    "phone": "+1 213 772 805",
+    "logo": "resources/information/businesses/businessesList/linkedivo/images/linkedivo-logo.png",
+    "mainField": ["IT", "بازاریابی"]
+  },
+  "overview": {
+    "summary": "Linkedivo یک پلتفرم شبکه‌سازی تجاری انقلابی است که برای اتصال کسب و کارها و افراد طراحی شده است و راهی ساده و کارآمد برای یافتن نیازهای خود و ارتباط با حرفه‌ایان با دیدگاه مشابه فراهم می‌کند. پلتفرم ما به عنوان یک مرکز جامع عمل می‌کند و همکاری‌هایی بدون سوراخ و بی درز را فراهم می‌کند که به رشد و موفقیت فراگیر منجر می‌شود.",
+    "videoID": "https://www.youtube.com/embed/X-jdl9hcCeg?si=9MNAeJV_Lp8wxHKB",
+    "videoCover": "resources/information/businesses/businessesList/linkedivo/images/video-cover.webp",
+    "mission": "ماموریت ما ارائه یک پلتفرم کاربرپسند برای ساده‌سازی ارتباطات تجاری است، که برای کاربران آسان می‌کند کسب و کارها را کشف و به آنها متصل شوند. ما سعی داریم یک محیط ایجاد کنیم که افراد و سازمان‌ها به آسانی نیازهای خود را پیدا کرده، شراکت‌های استراتژیک برقرار کنند و فرصت‌هایی جدید برای رشد و موفقیت را فراهم آورند.",
+    "vision": "برای ایجاد یک پلتفرم شبکه‌سازی تجاری که اتصالات را ساده کند و برای افراد و سازمان‌ها آسان کند تا کسب و کارها را پیدا و با آنها همکاری کنند. ما یک مرکز جهانی را پیش‌بینی می‌کنیم که در آن پیدا کردن راه حل‌های مناسب و برقراری همکاری‌های ارزشمند، آسان باشد و کسب و کارها را قادر به رشد و پیشرفت کند.",
+    "values": "<strong>سادگی:<strong> ما به ساده‌سازی فرآیند اتصالات تجاری متعهد هستیم، پیچیدگی‌ها را حذف کرده و یک تجربه بی درز برای کاربران فراهم می‌کنیم تا به آسانی کسب و کارهای مناسب را پیدا و متصل شوند.<br><strong>دسترسی:<strong> ما به ایجاد یک پلتفرم جامع با دسترسی آسان برای کاربران از تمام زمینه‌ها، مکان‌ها و صنایع اعتقاد داریم. هدف ما اتصال کسب و کارها و افراد به صورت جهانی است، بدون توجه به مکان جغرافیایی آن‌ها.<br><strong>توانمندسازی:<strong> ما کاربران را با ابزارها، منابع و بینش‌های لازم برای انجام تصمیمات اطلاع‌رسانی و ایجاد شراکت‌های معنی‌دار که کسب و کارهایشان را به جلو می‌برد، تقویت می‌کنیم.<br><strong>اعتماد و شفافیت:<strong> ما محیطی از اعتماد و شفافیت را ترویج می‌کنیم، اطمینان حاصل می‌کنیم که کسب و کارها خود را به دقت ارائه داده و کاربران می‌توانند به اطلاعات معتبری روی آورند تا اتصالاتی که با نیازها و اهدافشان هم‌خوانی دارد را برقرار کنند.<br><strong>نوآوری:<strong> ما نوآوری را درک می‌کنیم تا به بهبود دائمی پلتفرم خود بپردازیم، از فناوری‌های نوظهور و بازخورد کاربران برای ارائه تجربه‌ای در حال تغییر و پیشرفت استفاده کنیم که با تقاضای متغیر شبکه‌سازی تجاری همخوانی داشته باشد."
+  },
+  "services": {
+    "service1": {
+      "title": "فهرست کسب و کار",
+      "description": "صنعت شبکه‌سازی تجاری و بازار B2B/C2B در حال رشد قابل توجه است و فرصت‌های بسیاری را برای Linkedivo ارائه می‌دهد.",
+      "image": "/resources/businesses/linkedivo/images/service1.svg"
+    }
+  },
+  "contacts": {
+    "address": "شماره 24، خیابان نوآوری، تورنتو، کانادا",
+    "phone": "+1 213 772 0805",
+    "email": "info@linkedivo.com",
+    "website": "https://linkedivo.com",
+    "socialMedia": {
+      "linkedivo": "https://linkedivo.com/linkedivo",
+      "instagram": "https://instagram.com/linkedivo",
+      "facebook": "https://facebook.com/linkedivo",
+      "linkedin": "https://linkedin.com/linkedivo",
+      "whatsapp": "https://wa.me/+96891711527",
+      "telegram": "https://t.me/+96891711527",
+      "youtube": "https://youtube.com/linkedivo",
+      "twitter": "https://x.com/linkedivo"
+    },
+    "googleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10662884.764945788!2d-84.74963605!3d49.2717859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Canada!5e0!3m2!1sen!2som!4v1700084501440!5m2!1sen!2som"
+  },
+  "gallery": {
+    "gallery1": {
+      "title": "بازاریابی کسب و کار",
+      "description": "پلتفرم Linkedivo به یک مخاطب هدف متنوع خدمت می‌کند، شامل کسب و کارهای اندازه‌های مختلف، کارآفرینان، آزادکاران و حرفه‌ایانی که به دنبال اتصالات B2B و C2B هستند.",
+      "image": "/resources/businesses/linkedivo/images/service-1.png"
+    }
+  },
+  "moreInfo": {
+    "moreInfo1": {
+      "title": "دانلود پروفایل شرکت ۱",
+      "link": "https://www.africau.edu/images/default/sample.pdf",
+      "description": "توضیحات سرویس ۱",
+      "image": "/resources/businesses/linkedivo/images/service-1.png"
+    }
+  },
+  "categories": {
+    "IT": ["برنامه‌نویسی", "طراحی وب"],
+    "Marketing": ["بازاریابی دیجیتال", "تبلیغات", "چاپ"]
+  }
+}

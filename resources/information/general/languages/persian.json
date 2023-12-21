@@ -1,0 +1,32 @@
+{
+  "persian": {
+    "joinAsProducer": "پیوستن به عنوان تولیدکننده",
+    "aboutGccButton": "درباره GCCTrade",
+    "exploreButton": "کاوش بیشتر",
+    "english": "English",
+    "persian": "فارسی",
+    "arabic": "العربية",
+    "searchPlaceHolder": "جستجوی محصول...",
+    "slogan": "تجارت GCC، راه شما به بازارهای عربی",
+    "copyRights": "تمام حقوق محفوظ برای GCC Trade",
+    "termsCondistions": "شرایط و ضوابط",
+    "privacyPolicies": "سیاست‌های حفظ حریم خصوصی",
+
+    "explorerPageTitle": "کاوشگر محصول",
+    "products": "تمام محصولات",
+    "categories": "تمام دسته‌ها",
+    "selected": "منتخب",
+    "categoryFood": "غذا",
+    "categoryWood": "چوب",
+    "productRestaurant": "رستوران",
+    "productFastfood": "فست‌فود",
+    "productMDF": "اف‌دی‌اف",
+    "productLetron": "لترون",
+
+    "overview": "بررسی کلی",
+    "product": "محصولات",
+    "contact": "تماس",
+    "gallery": "گالری",
+    "moreInfo": "اطلاعات بیشتر"
+  }
+}

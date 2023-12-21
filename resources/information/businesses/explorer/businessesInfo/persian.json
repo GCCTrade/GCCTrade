@@ -1,0 +1,58 @@
+{
+  "id1001": {
+    "id": "1001",
+    "userName": "linkedivo",
+    "name": "لینکدیوو",
+    "title": "فهرست تجاری",
+    "slogan": "جایی که اتصال اتفاق می‌افتد",
+    "country": "کانادا",
+    "province": "اونتاریو",
+    "city": "تورنتو",
+    "logo": "resources/information/businesses/businessesList/linkedivo/images/linkedivo-logo.png",
+    "categories": [6, 19],
+    "products": [601, 602, 1901, 1902],
+    "metaDescription": "لینکدایو یک پلتفرم شبکه‌سازی تجاری انقلابی است که طراحی شده تا کسب‌وکارها و افراد را به یکدیگر وصل کند، یک راه ساده و کارآمد برای پیدا کردن نیازهایشان و ارتباط برقرار کردن با حرفه‌ای‌های هم‌اندیش. این پلتفرم به عنوان یک مرکز جامع عمل می‌کند و همکاری‌های بی‌درنگ را تسهیل می‌کند و فرصت‌های جدیدی برای رشد و موفقیت را رهایی می‌کند."
+  },
+  "id1002": {
+    "id": "1002",
+    "userName": "navan",
+    "name": "ناوان",
+    "title": "آژانس بازاریابی دیجیتال",
+    "slogan": "فکر طراحی کنید، طراحی را فکر کنید",
+    "country": "عمان",
+    "province": "مسقط",
+    "city": "مسقط",
+    "logo": "resources/information/businesses/businessesList/navan/images/navan-logo.png",
+    "categories": [5, 2],
+    "products": [501, 201],
+    "metaDescription": "در ناوان، ما فقط یک آژانس بازاریابی دیجیتال نیستیم؛ ما شریک متعهد شما در دستیابی به موفقیت دیجیتال هستیم."
+  },
+  "id1003": {
+    "id": "1003",
+    "userName": "ies",
+    "name": "راهکارهای نوآورانه تجارت الکترونیکی",
+    "title": "نرم‌افزار طراحی و برنامه‌نویسی",
+    "slogan": "به آینده‌ها دست بزنید",
+    "country": "عمان",
+    "province": "مسقط",
+    "city": "مسقط",
+    "logo": "resources/information/businesses/businessesList/ies/images/ies-logo.png",
+    "categories": [1, 3],
+    "products": [101, 301],
+    "metaDescription": "در IES، ما فقط یک آژانس بازاریابی دیجیتال نیستیم؛ ما شریک متعهد شما در دستیابی به موفقیت دیجیتال هستیم."
+  },
+  "id1004": {
+    "id": "1004",
+    "userName": "learnivo",
+    "name": "لرنیوو",
+    "title": "سیستم مدیریت یادگیری",
+    "slogan": "باز کردن ظرفیت، توانمندسازی آینده‌ها",
+    "country": "ایران",
+    "province": "تهران",
+    "city": "تهران",
+    "logo": "resources/information/businesses/businessesList/learnivo/images/learnivo-logo.png",
+    "categories": [1, 2, 4, 18],
+    "products": [101, 102, 401, 1801],
+    "metaDescription": "در الرنیوو ما فقط یک آژانس بازاریابی دیجیتال نیستیم؛ ما شریک متعهد شما در دستیابی به موفقیت دیجیتال هستیم."
+  }
+}

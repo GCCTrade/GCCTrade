@@ -117,36 +117,10 @@ function indexPageMaker() {
                 <button type="submit" class="button">
                     <i class="fa fa-search theme-text"></i>
                 </button>
-                <div class="categories-wrapper">
-                     <div class="dropdown-content"></div>
+                <div class="categories-wrapper  box-shadow ">
+                     <div class="dropdown-content  "></div>
                 </div>
           
-        <!--        <div class="categories-wrapper">
-                    <div class="cetegory-items">
-                        <label for="agriculture">Agriculture</label>
-                        <input type="checkbox" name="agriculture" id="agriculture">
-                    </div>
-                    <div class="cetegory-items">
-                        <label for="wood">Wood</label>
-                        <input type="checkbox" name="wood" id="wood">
-                    </div class="cetegory-items">
-                    <div class="cetegory-items">
-                        <label for="carpet">Carpet</label>
-                        <input type="checkbox" name="carpet" id="carpet">
-                    </div>
-                    <div class="cetegory-items">
-                        <label for="food">Food</label>
-                        <input type="checkbox" name="food" id="food">
-                    </div>
-                    <div class="cetegory-items">
-                        <label for="chemistry">Chemistry</label>
-                        <input type="checkbox" name="chemistry" id="chemistry">
-                    </div>
-                    <div class="cetegory-items">
-                        <label for="tourism">Tourism</label>
-                        <input type="checkbox" name="tourism" id="tourism">
-                    </div>
-                </div> -->
             </form>
              <div class="button-wrapper">
                 <div class="button-transparent theme-text about-button" data-lang="aboutGccButton">About GCCTrade</div>
@@ -159,7 +133,7 @@ function indexPageMaker() {
     //main page search console
     const buttonDropdown = document.querySelector(`.category-dropdown`);
     const buttonDropup = document.querySelector(`.category-dropup`);
-    const categoryWrapper = document.querySelector(`.dropdown-content`);
+    const categoryWrapper = document.querySelector(`.categories-wrapper`);
 
 
 

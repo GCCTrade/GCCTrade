@@ -204,7 +204,8 @@ body {
         left: 0;
         max-height: 250px;
         overflow-y: auto;
-        margin: 2px; }
+        margin: 2px;
+        z-index: 1000; }
         .main-app .main-main-wrapper .search-bar .categories-wrapper .dropdown-content {
           width: 100%;
           justify-content: space-between;
@@ -241,8 +242,7 @@ body {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       padding: 50px;
-      grid-gap: 25px;
-      z-index: 1000; }
+      grid-gap: 25px; }
       .main-app .main-main-wrapper .country-flags-wrapper .country-flag-card {
         display: flex;
         align-items: center;

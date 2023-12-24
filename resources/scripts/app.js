@@ -127,7 +127,36 @@ function indexPageMaker() {
                 <div class="button-transparent theme-text explorer-button" data-lang="exploreButton">Explore More</div>
             </div>
             <h1 data-lang="slogan">GCC Trade, Your Path to Arab Markets</h1>
-        </div>
+        
+
+          <div class="country-flags-wrapper">
+            <div class="country-flag-card " data-name="oman">
+                <img src="resources/images/Flag_of_Oman.png" alt="Oman">
+            </div>
+
+            <div class="country-flag-card" data-name="saudiArabia">
+                <img src="resources/images/Flag_of_Saudi_Arabia.png" alt="Saudi Arabia">
+            </div>
+
+            <div class="country-flag-card" data-name="unitedArabEmirates">
+                <img src="resources/images/Flag_of_the_United_Arab_Emirates.png" alt="United Arab Emirates">
+            </div>
+
+            <div class="country-flag-card" data-name="qatar">
+                <img src="resources/images/Flag_of_Qatar.png" alt="Qatar">
+            </div>
+
+            <div class="country-flag-card" data-name="kuwait">
+                <img src="resources/images/Flag_of_Kuwait.png" alt="Kuwait">
+            </div>
+
+            <div class="country-flag-card" data-name="bahrain">
+                <img src="resources/images/Flag_of_Bahrain.png" alt="Bahrain">
+            </div>
+        
+           </div>
+
+            </div>
 `;
 
     //main page search console
@@ -170,8 +199,14 @@ function indexPageMaker() {
     })
     searchFieldHome.focus();
 
-
-
+    // flag event click
+    const flags = document.querySelectorAll(`.country-flag-card`);
+    flags.forEach(elem => {
+        elem.addEventListener('click', function (element) {
+            // console.log();
+            notification("Data for " + element.target.dataset.name + " will be update")
+        })
+    })
 
     // Function to show the category wrapper and toggle buttons
     function showCategoryWrapper() {
@@ -801,6 +836,7 @@ function businessPageMaker() {
 
         <div class="nav-tools theme-text-reverse">
             <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div>
+           <i class="fa fa-search  theme-text-inverse"></i>
             <div class="language-wrapper">
                 <i class="fa fa-globe language-button"></i>
                 <div class="languages">
@@ -880,7 +916,7 @@ function businessPageMaker() {
                         <a href="#" data-lang="gallery" >Gallery</a>
                     </li>
                     <li class="nav-more-info" >
-                        <a data-lang="moreInfo" href="#">More Info</a>
+                        <a data-lang="moreInfo" href="#">Catalog</a>
                     </li>
                 </ul>
             </nav>
@@ -936,7 +972,6 @@ function businessPageMaker() {
         const moreInfo = document.querySelector(`.main-more-info`);
 
         const addToContact = document.querySelector(`.fa-user-plus`);
-
 
 
 
@@ -1283,6 +1318,14 @@ function businessPageMaker() {
         });
 
 
+        // explorer button click event
+        const explorerButtonNav = document.querySelector(`.nav-tools .fa-search`);
+        explorerButtonNav.addEventListener('click', function () {
+            renderPage(`/explorer`);
+
+        })
+
+
         //initialize
         businessNavMaker();
         appInit();
@@ -1307,6 +1350,11 @@ function youtubeVideoLoader(vID) {
         `;
     });
 }
+
+
+
+
+
 ///////////////////////////////////////////////////////////// footer for all page
 function footerMaker() {
     footerApp.innerHTML = `

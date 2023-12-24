@@ -241,7 +241,8 @@ body {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       padding: 50px;
-      grid-gap: 25px; }
+      grid-gap: 25px;
+      z-index: 1000; }
       .main-app .main-main-wrapper .country-flags-wrapper .country-flag-card {
         display: flex;
         align-items: center;

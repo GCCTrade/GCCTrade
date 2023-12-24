@@ -43,6 +43,7 @@ async function renderPage(pathname) {
 
 function navigate() {
     const pathname = window.location.pathname.toLowerCase();
+    // history.pushState(null, null, `/${element.dataset.username}`);
     renderPage(pathname);
 }
 // Listen to changes in the URL
@@ -319,6 +320,7 @@ function indexPageMaker() {
     // go to explorer page button add event listener
     const explorerButton = document.querySelector(`.explorer-button`);
     explorerButton.addEventListener(`click`, () => {
+        history.pushState(null, null, `/explorer`);
         renderPage(`/explorer`);
     })
 
@@ -443,6 +445,7 @@ function explorerPageMaker() {
     // nav logo event listener
     const navLogoWrapper = document.querySelector(`.nav-logo`);
     navLogoWrapper.addEventListener('click', () => {
+        history.pushState(null, null, `/`);
         renderPage('/');
     });
 
@@ -765,6 +768,7 @@ function businessExploreButtons() {
             if (parentElement) {
                 username = parentElement.dataset.username;
                 // console.log(username)
+                history.pushState(null, null, `/${username}`);
                 renderPage(`/${username}`);
             }
         })
@@ -1314,6 +1318,7 @@ function businessPageMaker() {
         // nav logo event listener
         const navLogoWrapper = document.querySelector(`.nav-logo`);
         navLogoWrapper.addEventListener('click', () => {
+            history.pushState(null, null, `/`);
             renderPage('/');
         });
 
@@ -1321,6 +1326,7 @@ function businessPageMaker() {
         // explorer button click event
         const explorerButtonNav = document.querySelector(`.nav-tools .fa-search`);
         explorerButtonNav.addEventListener('click', function () {
+            history.pushState(null, null, `/explorer`);
             renderPage(`/explorer`);
 
         })
@@ -1572,6 +1578,7 @@ function languageJS() {
                 explorerPageMaker();
                 dropdownCloser();
             } else {
+                history.pushState(null, null, `/${username}`);
                 renderPage(`/${username}`)
             }
 

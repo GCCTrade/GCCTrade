@@ -104,7 +104,8 @@ body {
         .header-app .main-header-nav .nav-tools i:hover {
           color: #dec583; }
       .header-app .main-header-nav .nav-tools .language-wrapper {
-        position: relative; }
+        position: relative;
+        z-index: 1100; }
         .header-app .main-header-nav .nav-tools .language-wrapper .languages {
           display: none;
           padding: 10px;

@@ -116,7 +116,7 @@ function indexPageMaker() {
                 <i class="fa fa-angle-up theme-text category-dropup"></i>
                 <input type="text" class="theme-text" placeholder="Search product..." data-lang="searchPlaceHolder">
                 <button type="submit" class="button">
-                    <i class="fa fa-search theme-text"></i>
+                    <i class="fa fa-search search-console-search-icon theme-text"></i>
                 </button>
                 <div class="categories-wrapper  box-shadow ">
                      <div class="dropdown-content  "></div>
@@ -840,7 +840,7 @@ function businessPageMaker() {
 
         <div class="nav-tools theme-text-reverse">
             <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div>
-           <i class="fa fa-search  theme-text-inverse"></i>
+           <i class="fa fa-search business-search-icon theme-text-inverse"></i>
             <div class="language-wrapper">
                 <i class="fa fa-globe language-button"></i>
                 <div class="languages">
@@ -1324,7 +1324,7 @@ function businessPageMaker() {
 
 
         // explorer button click event
-        const explorerButtonNav = document.querySelector(`.nav-tools .fa-search`);
+        const explorerButtonNav = document.querySelector(`.business-search-icon`);
         explorerButtonNav.addEventListener('click', function () {
             history.pushState(null, null, `/explorer`);
             renderPage(`/explorer`);

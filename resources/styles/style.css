@@ -117,7 +117,8 @@ body {
           justify-content: space-between;
           background: #71979d;
           color: #f5f5f5;
-          font-family: Vazirmatn; }
+          font-family: Vazirmatn;
+          z-index: 1100; }
           .header-app .main-header-nav .nav-tools .language-wrapper .languages span {
             font-size: 12px;
             cursor: pointer;

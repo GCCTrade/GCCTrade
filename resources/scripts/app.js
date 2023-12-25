@@ -284,8 +284,8 @@ function indexPageMaker() {
                 const categoryCheckboxes = document.querySelectorAll('input[data-type="category"]');
                 // Add change event listener to each category checkbox
                 categoryCheckboxes.forEach(checkbox => {
-                    // categoryCheckbox = Array.from(document.querySelectorAll('input[data-type="category"]'))
-                    //     .map(checkbox => checkbox.value);
+                    categoryCheckbox = Array.from(document.querySelectorAll('input[data-type="category"]'))
+                        .map(checkbox => checkbox.value);
 
                     checkbox.addEventListener('change', function () {
                         const selectedCategories = Array.from(document.querySelectorAll('input[data-type="category"]:checked'))

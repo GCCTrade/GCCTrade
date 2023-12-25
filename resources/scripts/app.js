@@ -59,22 +59,6 @@ navigate();
 window.onload = function () {
     loader.style.display = "none";
 };
-// let page = 'index';
-// 
-// let page = 'explorer';
-
-// function pageInitializer(pageName) {
-//     if (pageName === 'index') {
-//         indexPageMaker();
-//     } else if (pageName === 'explorer') {
-//         explorerPageMaker();
-//     }
-//     else if (pageName === 'business') {
-//         businessPageMaker();
-//     }
-//     footerMaker();
-// }
-// pageInitializer(page);
 
 
 
@@ -211,14 +195,19 @@ function indexPageMaker() {
 
     // Function to show the category wrapper and toggle buttons
     function showCategoryWrapper() {
+        const categoryDropdown = document.querySelector('.main-main-wrapper .dropdown-content');
+
         if (categoryWrapper) {
             categoryWrapper.style.display = 'flex';
+            categoryDropdown.style.display = 'flex';
         }
         if (buttonDropdown) {
             buttonDropdown.style.display = 'none';
+            categoryDropdown.style.display = 'none';
         }
         if (buttonDropup) {
             buttonDropup.style.display = 'flex';
+            categoryDropdown.style.display = 'flex';
         }
     }
 
@@ -268,6 +257,7 @@ function indexPageMaker() {
 
     //function -  dropdown maker use in filter of Index page
     function dropDownMakerIndex() {
+
         categoryCheckbox = "";
         indexCategoriesFilterdList = "";
         language = localStorage.getItem('language');
@@ -275,9 +265,10 @@ function indexPageMaker() {
         fetch(jsonFile)
             .then(response => response.json())
             .then(data => {
+
                 // category dropdown
                 const categories = data.categories; // Assuming the JSON structure has a 'categories' array
-                const categoryDropdown = document.querySelector('.dropdown-content');
+                const categoryDropdown = document.querySelector('.main-main-wrapper .dropdown-content');
                 categoryDropdown.innerHTML = ''; // Clear previous content if needed
                 categories.forEach(category => {
                     categoryDropdown.innerHTML += `
@@ -286,6 +277,7 @@ function indexPageMaker() {
                     <input type="checkbox" name="category-${category.slug}" id="category-${category.slug}" value="${category.id}" data-type="category">
                     </label>
                 `;
+
                 });
 
                 // Get all category checkboxes
@@ -299,10 +291,15 @@ function indexPageMaker() {
                         const selectedCategories = Array.from(document.querySelectorAll('input[data-type="category"]:checked'))
                             .map(checkbox => checkbox.value);
                         if (selectedCategories.length === 0) {
-                            categoryCheckbox = Array.from(document.querySelectorAll('input[data-type="category"]'))
-                                .map(checkbox => checkbox.value);
+                            // categoryCheckbox = Array.from(document.querySelectorAll('input[data-type="category"]'))
+                            //     .map(checkbox => checkbox.value);
+                            categoryCheckbox = [];
+                            // console.log(categoryCheckbox);
                         } else {
                             categoryCheckbox = selectedCategories;
+                            console.log(categoryCheckbox);
+                            history.pushState(null, null, `/explorer`);
+                            renderPage(`/explorer`);
 
                         }
                         // console.log(categoryCheckbox)

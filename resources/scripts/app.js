@@ -70,9 +70,8 @@ function indexPageMaker() {
     headeApp.classList.add('theme');
     headeApp.innerHTML = `   <nav class="main-header-nav">
             <div class="join-businesses">
-                <h2 data-lang="joinAsProducer"> 
-                       <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
- </h2>
+                                 <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" >   <h2 data-lang="joinAsProducer">  </h2></a>
+
 
             </div>
 

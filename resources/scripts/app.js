@@ -69,9 +69,10 @@ function indexPageMaker() {
     headeApp.classList.remove('theme-reverse');
     headeApp.classList.add('theme');
     headeApp.innerHTML = `   <nav class="main-header-nav">
-            <div class="join-businesses">
-                                 <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank"  >   <h2 data-lang="joinAsProducer">  </h2></a>
+         <div class="join-businesses">
 
+                       <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" >   <h2 data-lang="joinAsProducer"> Join as Producer </h2>
+                       </a>
 
             </div>
 

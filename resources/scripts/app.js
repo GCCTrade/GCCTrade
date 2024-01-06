@@ -70,7 +70,10 @@ function indexPageMaker() {
     headeApp.classList.add('theme');
     headeApp.innerHTML = `   <nav class="main-header-nav">
             <div class="join-businesses">
-                <h2 data-lang="joinAsProducer">Join as Producer </h2>
+                <h2 data-lang="joinAsProducer"> 
+                       <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
+ </h2>
+
             </div>
 
             <div class="nav-tools theme-text">
@@ -345,8 +348,10 @@ function explorerPageMaker() {
         </div>
 
         <div class="nav-tools theme-text-reverse">
-            <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div>
-            <div class="language-wrapper">
+                        <!--  <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div> -->
+        <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
+
+                        <div class="language-wrapper">
                 <i class="fa fa-globe language-button"></i>
                 <div class="languages">
                     <span data-lang="persian" class="lang-item">Persian</span>
@@ -836,7 +841,8 @@ function businessPageMaker() {
         </div>
 
         <div class="nav-tools theme-text-reverse">
-            <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div>
+                    <!--  <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div> -->
+        <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
            <i class="fa fa-search business-search-icon theme-text-inverse"></i>
             <div class="language-wrapper">
                 <i class="fa fa-globe language-button"></i>

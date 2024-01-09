@@ -848,6 +848,7 @@ body {
   z-index: 1000; }
 
 .country-info-wrapper {
+  z-index: 2000;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -1053,4 +1054,6 @@ body {
       height: 30px; }
   .country-info-wrapper {
     min-width: 250px;
-    width: 390px; } }
+    width: 390px; }
+    .country-info-wrapper .country-info-close h3 {
+      font-size: 20px; } }

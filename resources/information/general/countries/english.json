@@ -1,0 +1,232 @@
+{
+  "countries": {
+    "oman": {
+      "name": "Oman",
+      "capital": {
+        "title": "Capital",
+        "name": "Muscat"
+      },
+      "area": {
+        "title": "Area",
+        "total": "309,500 km2 (119,500 sq mi)"
+      },
+      "population": {
+        "title": "Population",
+        "total": "2021 estimate: 4,520,471 (125th)",
+        "density": "15/km2 (38.8/sq mi) (177th)"
+      },
+      "gdpPpp": {
+        "title": "GDP (PPP)",
+        "total": "2023 estimate: $200.295 billion (78th)",
+        "perCapita": "$39,336 (71st)"
+      },
+      "gdpNominal": {
+        "title": "GDP (Nominal)",
+        "total": "2023 estimate: $108.282 billion (66th)",
+        "perCapita": " $21,265 (55th)"
+      },
+      "hdi": {
+        "title": "HDI",
+        "total": "0.816 very high (54th)"
+      },
+      "currency": {
+        "title": "Currency",
+        "total": "Omani rial (OMR)"
+      },
+      "timeZone": {
+        "title": "Time Zone",
+        "total": "UTC+4 (GST)"
+      }
+    },
+    "kuwait": {
+      "name": "Kuwait",
+      "capital": {
+        "title": "Capital",
+        "name": "Kuwait City"
+      },
+      "area": {
+        "title": "Area",
+        "total": "17,818 km2 (6,880 sq mi) (152nd)"
+      },
+      "population": {
+        "title": "Population",
+        "total": "2022 estimate: 4,294,621 (137th)",
+        "density": "200.2/km2 (518.5/sq mi) (62nd)"
+      },
+      "gdpPpp": {
+        "title": "GDP (PPP)",
+        "total": "2023 estimate: $256.593 billion (65th)",
+        "perCapita": "$51,764 (30th)"
+      },
+      "gdpNominal": {
+        "title": "GDP (Nominal)",
+        "total": "2023 estimate: $159.687 billion (59th)",
+        "perCapita": "$32,215 (26th)"
+      },
+      "hdi": {
+        "title": "HDI",
+        "total": " 0.831 very high (50th)"
+      },
+      "currency": {
+        "title": "Currency",
+        "total": "Kuwaiti dinar"
+      },
+      "timeZone": {
+        "title": "Time Zone",
+        "total": "UTC+3 (AST)"
+      }
+    },
+    "bahrain": {
+      "name": "Bahrain",
+      "capital": {
+        "title": "Capital",
+        "name": "Manama"
+      },
+      "area": {
+        "title": "Area",
+        "total": "786.5 km2 (303.7 sq mi) (173rd)"
+      },
+      "population": {
+        "title": "Population",
+        "total": "2021 estimate: 1,463,265 (149th)",
+        "density": "1,864/km2 (4,827.7/sq mi) (6th)"
+      },
+      "gdpPpp": {
+        "title": "GDP (PPP)",
+        "total": "2023 estimate: $95.973 billion (101st)",
+        "perCapita": "$60,715 (23rd)"
+      },
+      "gdpNominal": {
+        "title": "GDP (Nominal)",
+        "total": "2023 estimate: $44.994 billion (97th)",
+        "perCapita": "$28,464 (39th)"
+      },
+      "hdi": {
+        "title": "HDI",
+        "total": " 0.875 very high (35th)"
+      },
+      "currency": {
+        "title": "Currency",
+        "total": "Bahraini dinar (BHD)"
+      },
+      "timeZone": {
+        "title": "Time Zone",
+        "total": "UTC+3 (AST)"
+      }
+    },
+    "qatar": {
+      "name": "Qatar",
+      "capital": {
+        "title": "Capital",
+        "name": "Doha"
+      },
+      "area": {
+        "title": "Area",
+        "total": "11,581 km2 (4,471 sq mi) (158th)"
+      },
+      "population": {
+        "title": "Population",
+        "total": "2020 estimate: 2,795,484 (139th)",
+        "density": "176/km2 (455.8/sq mi) (76th)"
+      },
+      "gdpPpp": {
+        "title": "GDP (PPP)",
+        "total": "2023 estimate: $328.134 billion (62nd)",
+        "perCapita": "$114,210 (4th)"
+      },
+      "gdpNominal": {
+        "title": "GDP (Nominal)",
+        "total": "2023 estimate: $235.500 billion (55th)",
+        "perCapita": "$81,968 (5th)"
+      },
+      "hdi": {
+        "title": "HDI",
+        "total": "0.855 very high (42nd)"
+      },
+      "currency": {
+        "title": "Currency",
+        "total": "Qatari riyal (QAR)"
+      },
+      "timeZone": {
+        "title": "Time Zone",
+        "total": "UTC+3 (AST)"
+      }
+    },
+    "saudiArabia": {
+      "name": "Saudi Arabia",
+      "capital": {
+        "title": "Capital",
+        "name": "Riyadh"
+      },
+      "area": {
+        "title": "Area",
+        "total": "2,149,690 km2 (830,000 sq mi) (12th)"
+      },
+      "population": {
+        "title": "Population",
+        "total": "2022 census: 32,175,224 (46th)",
+        "density": "15/km2 (38.8/sq mi) (174th)"
+      },
+      "gdpPpp": {
+        "title": "GDP (PPP)",
+        "total": "2023 estimate: $2.246 trillion (17th)",
+        "perCapita": "$68,452 (27th)"
+      },
+      "gdpNominal": {
+        "title": "GDP (Nominal)",
+        "total": "2023 estimate: $1.069 trillion (18th)",
+        "perCapita": "$32,586 (43rd)"
+      },
+      "hdi": {
+        "title": "HDI",
+        "total": "0.875 very high (35th)"
+      },
+      "currency": {
+        "title": "Currency",
+        "total": "Saudi riyal (SR) (SAR)"
+      },
+      "timeZone": {
+        "title": "Time Zone",
+        "total": "UTC+3 (AST)"
+      }
+    },
+    "unitedArabEmirates": {
+      "name": "United Arab Emirates",
+      "capital": {
+        "title": "Capital",
+        "name": "Abu Dhabi"
+      },
+      "area": {
+        "title": "Area",
+        "total": "83,600 km2 (32,300 sq mi) (114th)"
+      },
+      "population": {
+        "title": "Population",
+        "total": "2020 estimate: 9,282,410 (92nd)",
+        "density": "121/km2 (313.4/sq mi) (110th)"
+      },
+      "gdpPpp": {
+        "title": "GDP (PPP)",
+        "total": "2023 estimate:  $895.166 billion (34th)",
+        "perCapita": "$88,961 (6th)"
+      },
+      "gdpNominal": {
+        "title": "GDP (Nominal)",
+        "total": "2023 estimate: $509.179 billion (32nd)",
+        "perCapita": "$50,602 (20th)"
+      },
+      "hdi": {
+        "title": "HDI",
+        "total": " 0.911 very high (26th)"
+      },
+      "currency": {
+        "title": "Currency",
+        "total": "UAE dirham (AED)"
+      },
+      "timeZone": {
+        "title": "Time Zone",
+        "total": "UTC+04:00 (GST)"
+      }
+    }
+  }
+}

@@ -104,29 +104,47 @@ body {
         .header-app .main-header-nav .nav-tools i:hover {
           color: #d43939; }
       .header-app .main-header-nav .nav-tools .language-wrapper {
-        position: relative;
-        z-index: 1100; }
-        .header-app .main-header-nav .nav-tools .language-wrapper .languages {
-          box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
-          display: none;
-          padding: 10px;
-          border-radius: 10px;
-          position: absolute;
-          top: 35px;
-          left: 0;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-between;
-          background: #dec583;
-          color: #f5f5f5;
-          font-family: Vazirmatn;
-          z-index: 1100; }
-          .header-app .main-header-nav .nav-tools .language-wrapper .languages span {
-            font-size: 12px;
-            cursor: pointer;
+        font-size: 12px;
+        z-index: 1100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 12px;
+        position: relative; }
+        .header-app .main-header-nav .nav-tools .language-wrapper .language-button-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1px;
+          border-radius: 15px;
+          transition: 0.3s; }
+          .header-app .main-header-nav .nav-tools .language-wrapper .language-button-container:hover {
+            background: #d43939; }
+          .header-app .main-header-nav .nav-tools .language-wrapper .language-button-container .language-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            min-width: 35px;
+            padding: 4px 8px;
             transition: 0.3s;
-            margin: 5px 0; }
-            .header-app .main-header-nav .nav-tools .language-wrapper .languages span:hover {
+            cursor: pointer; }
+            .header-app .main-header-nav .nav-tools .language-wrapper .language-button-container .language-button:hover {
+              color: #d43939; }
+        .header-app .main-header-nav .nav-tools .language-wrapper .languages {
+          font-family: "Vazirmatn" !important;
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 40px;
+          padding: 10px;
+          border-radius: 10px; }
+          .header-app .main-header-nav .nav-tools .language-wrapper .languages > * {
+            display: inline-flex;
+            cursor: pointer;
+            padding: 5px;
+            transition: 0.3s; }
+            .header-app .main-header-nav .nav-tools .language-wrapper .languages > *:hover {
               color: #d43939; }
   .header-app .explorer-header-nav .nav-logo {
     display: flex;
@@ -829,6 +847,62 @@ body {
   right: 20px;
   z-index: 1000; }
 
+.country-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  min-width: 800px;
+  width: 1024px;
+  background: #dec583;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .country-info-wrapper .country-info-close {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px; }
+    .country-info-wrapper .country-info-close i {
+      cursor: pointer;
+      font-size: 20px;
+      padding: 0 20px; }
+    .country-info-wrapper .country-info-close h3 {
+      font-size: 35px; }
+  .country-info-wrapper .country-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 15px;
+    padding-top: 0;
+    font-size: 12px; }
+    .country-info-wrapper .country-info .country-map {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px; }
+      .country-info-wrapper .country-info .country-map img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        object-fit: cover;
+        object-position: center; }
+    .country-info-wrapper .country-info .country-info-table {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .country-info-wrapper .country-info .country-info-table .country-info-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-bottom: 1px solid #1e1e1e18;
+        padding: 7px 0; }
+        .country-info-wrapper .country-info .country-info-table .country-info-card:last-child {
+          border: none; }
+        .country-info-wrapper .country-info .country-info-table .country-info-card .info-title {
+          display: flex;
+          align-items: center;
+          font-size: 13px; }
+
 .button-transparent {
   min-width: 150px;
   display: inline-flex;
@@ -881,7 +955,10 @@ body {
   .main-app .explorer-main-business .explorer-heading {
     flex-direction: column; }
     .main-app .explorer-main-business .explorer-heading .explorer-search-field {
-      grid-template-columns: repeat(1, 1fr); } }
+      grid-template-columns: repeat(1, 1fr); }
+  .country-info-wrapper {
+    min-width: 800px;
+    width: 800px; } }
 
 @media (max-width: 800px) {
   .main-app .business-wrapper .header-content {
@@ -921,7 +998,18 @@ body {
     grid-gap: 20px; }
     .main-app .main-main-wrapper .country-flags-wrapper .country-flag-card {
       width: 60px;
-      height: 35px; } }
+      height: 35px; }
+  .country-info-wrapper {
+    min-width: 470px;
+    width: 490px; }
+    .country-info-wrapper .country-info {
+      grid-template-columns: 1fr; }
+      .country-info-wrapper .country-info .country-map {
+        order: 1; }
+        .country-info-wrapper .country-info .country-map img {
+          width: 50%; }
+      .country-info-wrapper .country-info .country-info-table {
+        order: 2; } }
 
 @media (max-width: 500px) {
   .main-app .business-wrapper .header-content {
@@ -962,4 +1050,7 @@ body {
     .main-app .main-main-wrapper .country-flags-wrapper .country-flag-card {
       border-radius: 7px;
       width: 50px;
-      height: 30px; } }
+      height: 30px; }
+  .country-info-wrapper {
+    min-width: 250px;
+    width: 390px; } }

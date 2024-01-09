@@ -69,23 +69,35 @@ function indexPageMaker() {
     headeApp.classList.remove('theme-reverse');
     headeApp.classList.add('theme');
     headeApp.innerHTML = `   <nav class="main-header-nav">
-         <div class="join-businesses">
-
+            <div class="join-businesses">
+            
                        <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" >   <h2 data-lang="joinAsProducer"> Join as Producer </h2>
                        </a>
 
             </div>
 
             <div class="nav-tools theme-text">
-                <div class="language-wrapper">
-                    <i class="fa fa-globe language-button"></i>
-                    <div class="languages">
-                        <span data-lang="persian" class="lang-item">Persian</span>
-                        <span data-lang="english" class="lang-item">English</span>
-                        <span data-lang="arabic" class="lang-item">Arabic</span>
+                <!-- languages -->
+                        <div class="language-wrapper">
+                            <span class="theme-reverse language-button-container">
+                                <span class="language-button theme" data-lang="language">EN</span>
+                            </span>
+                            <div class="languages theme-reverse box-shadow ">
+                             <span data-lang="english" class="lang-item">English</span>
+                                <span data-lang="persian" class="lang-item">Persian</span>
+                                <span data-lang="arabic" class="lang-item">Arabic</span>
+                            </div>
+                        </div>
+                <!--
+                    <div class="language-wrapper">
+                        <i class="fa fa-globe language-button"></i>
+                        <div class="languages">
+                            <span data-lang="persian" class="lang-item">Persian</span>
+                            <span data-lang="english" class="lang-item">English</span>
+                            <span data-lang="arabic" class="lang-item">Arabic</span>
+                        </div>
                     </div>
-                </div>
-
+                -->
                 <i class="fa fa-moon  dark-button-theme"></i>
                 <i class="fa fa-sun  light-button-theme"></i>
             </div>
@@ -187,14 +199,242 @@ function indexPageMaker() {
     })
     searchFieldHome.focus();
 
+
+
     // flag event click
     const flags = document.querySelectorAll(`.country-flag-card`);
     flags.forEach(elem => {
         elem.addEventListener('click', function (element) {
             // console.log();
-            notification("Data for " + element.target.dataset.name + " will be update")
+            countryInfo(element.target.dataset.name);
         })
     })
+    // function country flag info popup maker
+    // function countryInfo(name) {
+
+    //     const language = localStorage.getItem('language');
+    //     const url = `resources/information/general/countries/${language}.json`;
+
+    async function countryInfo(name) {
+        const language = localStorage.getItem('language');
+        const url = `resources/information/general/countries/${language}.json`;
+
+        try {
+            const response = await fetch(url);
+            const countryData = await response.json();
+
+            // Use countryData to access information for the specific country (e.g., "name")
+            const countryInfo = countryData.countries[name];
+            console.log(countryInfo)
+            // Create the countryPopupWrapper and populate it with the fetched data
+            const countryPopupWrapper = document.createElement('div');
+            countryPopupWrapper.classList.add("country-info-wrapper", "box-shadow");
+            // Populate countryPopupWrapper using countryInfo
+
+            countryPopupWrapper.innerHTML = `
+            <div class="country-info-close">
+                <h3 data-lang="countryName">${countryInfo.name}</h3>
+
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="country-info">
+
+                <div class="country-info-table">
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryCapitalTitle">${countryInfo.capital.title}</span>
+                        <span class="info-details" data-lang="countryCapitalInfo">${countryInfo.capital.name}</span>
+                    </div>
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryAreaTitle">${countryInfo.area.title}</span>
+                        <span class="info-details" data-lang="countryAreaInfo">${countryInfo.area.total}</span>
+                    </div>
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryPopulationTitle">${countryInfo.population.title}</span>
+                        <span class="info-details" data-lang="countryPopulationInfo">
+                            Total: ${countryInfo.population.total}
+                            <br> Density: ${countryInfo.population.density}
+                        </span>
+                    </div>
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryGdpPppTitle">${countryInfo.gdpPpp.title}</span>
+                        <span class="info-details" data-lang="countryGdpPppInfo">
+                            Total: ${countryInfo.gdpPpp.total}
+                            <br> PerCapita: ${countryInfo.gdpPpp.perCapita}
+                        </span>
+                    </div>
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryGdpNominalTitle">${countryInfo.gdpNominal.title}</span>
+                        <span class="info-details" data-lang="countryGdpNominalInfo">
+                            Total: ${countryInfo.gdpNominal.total}
+                            <br> PerCapita: ${countryInfo.gdpNominal.perCapita}
+                        </span>
+                    </div>
+
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryHdiTitle">${countryInfo.hdi.title}</span>
+                        <span class="info-details" data-lang="countryHdiInfo">${countryInfo.hdi.total}</span>
+                    </div>
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryCurrencyTitle">${countryInfo.currency.title}</span>
+                        <span class="info-details" data-lang="countryCurrencyInfo">${countryInfo.currency.total}</span>
+                    </div>
+                    <!-- single tabel info -->
+                    <div class="country-info-card">
+                        <span class="info-title" data-lang="countryCurrencyTitle">${countryInfo.timeZone.title}</span>
+                        <span class="info-details" data-lang="countryCurrencyInfo">${countryInfo.timeZone.total}</span>
+                    </div>
+
+                </div>
+                <div class="country-map">
+                    <img src="resources/images/map-${name}.png" alt="map of ${countryInfo.name}">
+                </div>
+            </div>
+        `
+            document.body.appendChild(countryPopupWrapper);
+
+            // Event listeners for closing the popup
+            const closeIcon = countryPopupWrapper.querySelector('.fa-times');
+            const closePopup = () => {
+                countryPopupWrapper.remove();
+            };
+
+            closeIcon.addEventListener('click', (event) => {
+                event.stopPropagation();
+                closePopup();
+            });
+
+            document.addEventListener('mousedown', (event) => {
+                setTimeout(() => {
+                    const isClickInsidePopup = countryPopupWrapper.contains(event.target);
+                    if (!isClickInsidePopup) {
+                        closePopup();
+                    }
+                }, 0);
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closePopup();
+                }
+            });
+        } catch (error) {
+            console.error('Error fetching country information', error);
+        }
+    }
+
+
+
+
+
+
+    // const countryPopupWrapper = document.createElement('div');
+    // countryPopupWrapper.classList.add("country-info-wrapper", "box-shadow");
+    // countryPopupWrapper.innerHTML = `
+    //     <div class="country-info-close">
+    //         <h3 data-lang="countryName">${name}</h3>
+
+    //         <i class="fa fa-times"></i>
+    //     </div>
+    //     <div class="country-info">
+
+    //         <div class="country-info-table">
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryCapitalTitle">Capital</span>
+    //                 <span class="info-details" data-lang="countryCapitalInfo">Muscat</span>
+    //             </div>
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryAreaTitle">Area</span>
+    //                 <span class="info-details" data-lang="countryAreaInfo">309,500 km2 (119,500 sq mi)</span>
+    //             </div>
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryPopulationTitle">Population</span>
+    //                 <span class="info-details" data-lang="countryPopulationInfo">
+    //                     Total: 2021 estimate: 4,520,471 (125th)
+    //                     <br> Density: 15/km2 (38.8/sq mi) (177th)
+    //                 </span>
+    //             </div>
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryGdpPppTitle">GDP (PPP)</span>
+    //                 <span class="info-details" data-lang="countryGdpPppInfo">
+    //                     Total: 2023 estimate: $200.295 billion (78th)
+    //                     <br> PerCapita: $39,336 (71st)
+    //                 </span>
+    //             </div>
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryGdpNominalTitle">GDP (Nominal)</span>
+    //                 <span class="info-details" data-lang="countryGdpNominalInfo">
+    //                     Total:2023 estimate: $108.282 billion (66th)
+    //                     <br> PerCapita: $21,265 (55th)
+    //                 </span>
+    //             </div>
+
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryHdiTitle">HDI</span>
+    //                 <span class="info-details" data-lang="countryHdiInfo">0.816 very high (54th)</span>
+    //             </div>
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryCurrencyTitle">Currency</span>
+    //                 <span class="info-details" data-lang="countryCurrencyInfo">Omani rial (OMR)</span>
+    //             </div>
+    //             <!-- single tabel info -->
+    //             <div class="country-info-card">
+    //                 <span class="info-title" data-lang="countryCurrencyTitle">Time Zone</span>
+    //                 <span class="info-details" data-lang="countryCurrencyInfo">UTC+4 (GST)</span>
+    //             </div>
+
+    //         </div>
+    //         <div class="country-map">
+    //             <img src="resources/images/map-oman.png" alt="map of Oman">
+    //         </div>
+    //     </div>
+    // `
+    // document.body.appendChild(countryPopupWrapper);
+
+    // //close icon and its event
+    // const closeIcon = countryPopupWrapper.querySelector('.fa-times');
+    // const closePopup = () => {
+    //     countryPopupWrapper.remove(); // Remove the popup from the DOM
+    // };
+
+    // closeIcon.addEventListener('click', (event) => {
+    //     event.stopPropagation();
+    //     closePopup();
+    // });
+
+    // // Event listener to close the popup when clicking outside of it
+    // document.addEventListener('mousedown', (event) => {
+    //     setTimeout(() => {
+    //         const isClickInsidePopup = countryPopupWrapper.contains(event.target);
+    //         if (!isClickInsidePopup) {
+    //             closePopup();
+    //         }
+    //     }, 0);
+    // });
+
+    // // Event listener to close the popup on "Escape" key press
+    // document.addEventListener('keydown', (event) => {
+    //     if (event.key === 'Escape') {
+    //         closePopup();
+    //     }
+    // });
+
+    // console.log(countryPopupWrapper);
+
+    // }
 
     // Function to show the category wrapper and toggle buttons
     function showCategoryWrapper() {
@@ -351,14 +591,27 @@ function explorerPageMaker() {
                         <!--  <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div> -->
         <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
 
+              <!-- languages -->
                         <div class="language-wrapper">
-                <i class="fa fa-globe language-button"></i>
-                <div class="languages">
-                    <span data-lang="persian" class="lang-item">Persian</span>
-                    <span data-lang="english" class="lang-item">English</span>
-                    <span data-lang="arabic" class="lang-item">Arabic</span>
-                </div>
-            </div>
+                            <span class="theme-reverse language-button-container">
+                                <span class="language-button theme" data-lang="language">EN</span>
+                            </span>
+                            <div class="languages theme-reverse box-shadow ">
+                                <span data-lang="english" class="lang-item">English</span>
+                                <span data-lang="persian" class="lang-item">Persian</span>
+                                <span data-lang="arabic" class="lang-item">Arabic</span>
+                            </div>
+                        </div>
+                <!--
+                    <div class="language-wrapper">
+                        <i class="fa fa-globe language-button"></i>
+                        <div class="languages">
+                            <span data-lang="persian" class="lang-item">Persian</span>
+                            <span data-lang="english" class="lang-item">English</span>
+                            <span data-lang="arabic" class="lang-item">Arabic</span>
+                        </div>
+                    </div>
+                -->
             <i class="fa fa-moon  dark-button-theme"></i>
             <i class="fa fa-sun  light-button-theme"></i>
         </div>
@@ -844,14 +1097,27 @@ function businessPageMaker() {
                     <!--  <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div> -->
         <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
            <i class="fa fa-search business-search-icon theme-text-inverse"></i>
-            <div class="language-wrapper">
-                <i class="fa fa-globe language-button"></i>
-                <div class="languages">
-                    <span data-lang="persian" class="lang-item">Persian</span>
-                    <span data-lang="english" class="lang-item">English</span>
-                    <span data-lang="arabic" class="lang-item">Arabic</span>
-                </div>
-            </div>
+             <!-- languages -->
+                        <div class="language-wrapper">
+                            <span class="theme-reverse language-button-container">
+                                <span class="language-button theme" data-lang="language">EN</span>
+                            </span>
+                            <div class="languages theme-reverse box-shadow ">
+                                <span data-lang="english" class="lang-item">English</span>
+                                <span data-lang="persian" class="lang-item">Persian</span>
+                                <span data-lang="arabic" class="lang-item">Arabic</span>
+                            </div>
+                        </div>
+                <!--
+                    <div class="language-wrapper">
+                        <i class="fa fa-globe language-button"></i>
+                        <div class="languages">
+                            <span data-lang="persian" class="lang-item">Persian</span>
+                            <span data-lang="english" class="lang-item">English</span>
+                            <span data-lang="arabic" class="lang-item">Arabic</span>
+                        </div>
+                    </div>
+                -->
             <i class="fa fa-moon  dark-button-theme"></i>
             <i class="fa fa-sun  light-button-theme"></i>
         </div>
@@ -1516,6 +1782,131 @@ function themeJS() {
 
 
 ///////////////////////////////////////////////////////////////////// language.js
+// function languageJS() {
+
+//     const languageButton = document.querySelector(`.language-button`);
+//     const languageWrapper = document.querySelector(`.languages`);
+
+//     // check and save prefered language on local storage
+//     language = localStorage.getItem("language");
+//     if (!language) {
+//         localStorage.setItem("language", "english");
+//         languageInitializer(language);
+//     } else {
+//         languageInitializer(language);
+//     }
+
+
+
+//     // Function to show the language list
+//     function showLanguageList() {
+//         languageWrapper.style.display = 'flex';
+//     }
+
+//     // Function to hide the language list
+//     function hideLanguageList() {
+//         languageWrapper.style.display = 'none';
+//     }
+
+//     // Event listener for the button click
+//     languageButton.addEventListener('click', function (event) {
+//         event.stopPropagation(); // Prevents the click event from bubbling to the document
+//         if (languageWrapper.style.display === 'none' || languageWrapper.style.display === '') {
+//             showLanguageList();
+//         } else {
+//             hideLanguageList();
+//         }
+//     });
+
+//     // Event listener for clicks on the document
+//     document.addEventListener('click', function () {
+//         hideLanguageList();
+//     });
+
+//     // Prevent language list from hiding when clicking inside the languageWrapper
+//     languageWrapper.addEventListener('click', function (event) {
+//         event.stopPropagation(); // Prevents the click event from bubbling to the document
+//     });
+
+
+//     // Event listeners for each language
+//     const languages = document.querySelectorAll(`.lang-item`);
+//     languages.forEach(lang => {
+//         lang.addEventListener('click', function () {
+//             language = this.getAttribute('data-lang');
+//             // console.log('Selected language:', language);
+//             localStorage.setItem("language", language);
+//             languageInitializer(language);
+//             hideLanguageList();
+
+//             // Revoke page maker
+//             if (page === `/`) {
+//                 indexPageMaker();
+//             } else if (page === '/explorer') {
+//                 // dropDownMaker();
+//                 explorerPageMaker();
+//                 dropdownCloser();
+//             } else {
+//                 history.pushState(null, null, `/${username}`);
+//                 renderPage(`/${username}`)
+//             }
+
+//         });
+//     });
+
+
+//     // language initilaezer and Updater
+//     function languageInitializer(language) {
+//         fetch(`resources/information/general/languages/${language}.json`)
+//             .then(response => response.json())
+//             .then(data => {
+//                 const elements = document.querySelectorAll(`[data-lang]`);
+//                 elements.forEach(element => {
+//                     const key = element.getAttribute('data-lang');
+//                     if (data[language] && data[language][key]) {
+//                         if (element.tagName.toLowerCase() === 'input' && element.getAttribute('type') === 'text') {
+//                             // Check if it's an input element with type="text" and set placeholder
+//                             element.setAttribute('placeholder', data[language][key]);
+//                         } else {
+//                             // For other elements, set text content
+//                             element.textContent = data[language][key];
+//                         }
+//                     }
+//                 });
+
+//                 // Change font and direction based on the language
+//                 const body = document.querySelector('body');
+//                 if (language === 'english') {
+//                     body.style.fontFamily = 'Poppins, sans-serif';
+//                     body.style.direction = 'ltr';
+//                 } else {
+//                     body.style.fontFamily = 'Vazirmatn, sans-serif';
+//                     body.style.direction = 'rtl';
+//                 }
+
+
+//                 titleOfDropdowns = {
+//                     'allCategory': data[language].categories,
+//                     'allProduct': data[language].products,
+//                     'selected': data[language].selected,
+//                 };
+//                 // console.log(titleOfDropdowns);
+
+
+//             })
+//             .catch(error => {
+//                 console.error('Error fetching language file:', error);
+//             });
+
+//         // set font of input tag
+//         const inputs = document.querySelectorAll('input');
+//         inputs.forEach(input => {
+//             input.style.fontFamily = language === 'english' ? 'Poppins, sans-serif' : 'Vazirmatn, sans-serif';
+//         });
+//     }
+// }
+
+
 function languageJS() {
 
     const languageButton = document.querySelector(`.language-button`);
@@ -1529,8 +1920,6 @@ function languageJS() {
     } else {
         languageInitializer(language);
     }
-
-
 
     // Function to show the language list
     function showLanguageList() {
@@ -1573,17 +1962,17 @@ function languageJS() {
             languageInitializer(language);
             hideLanguageList();
 
-            // Revoke page maker
-            if (page === `/`) {
-                indexPageMaker();
-            } else if (page === '/explorer') {
-                // dropDownMaker();
-                explorerPageMaker();
-                dropdownCloser();
-            } else {
-                history.pushState(null, null, `/${username}`);
-                renderPage(`/${username}`)
-            }
+            // // Revoke page maker
+            // if (page === `/`) {
+            //     indexPageMaker();
+            // } else if (page === '/explorer') {
+            //     // dropDownMaker();
+            //     explorerPageMaker();
+            //     dropdownCloser();
+            // } else {
+            //     history.pushState(null, null, `/${username}`);
+            //     renderPage(`/${username}`)
+            // }
 
         });
     });
@@ -1618,13 +2007,12 @@ function languageJS() {
                     body.style.direction = 'rtl';
                 }
 
-
                 titleOfDropdowns = {
                     'allCategory': data[language].categories,
                     'allProduct': data[language].products,
                     'selected': data[language].selected,
                 };
-                // console.log(titleOfDropdowns);
+                console.log(titleOfDropdowns);
 
 
             })
@@ -1639,6 +2027,8 @@ function languageJS() {
         });
     }
 }
+
+
 
 //////////////////////////////////////////////////////////////////// notification
 const notif = document.querySelector('.notifications')

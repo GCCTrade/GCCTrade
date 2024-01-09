@@ -254,24 +254,24 @@ function indexPageMaker() {
                     <div class="country-info-card">
                         <span class="info-title" data-lang="countryPopulationTitle">${countryInfo.population.title}</span>
                         <span class="info-details" data-lang="countryPopulationInfo">
-                            Total: ${countryInfo.population.total}
-                            <br> Density: ${countryInfo.population.density}
+                            ${countryInfo.population.total}
+                            <br>${countryInfo.population.density}
                         </span>
                     </div>
                     <!-- single tabel info -->
                     <div class="country-info-card">
                         <span class="info-title" data-lang="countryGdpPppTitle">${countryInfo.gdpPpp.title}</span>
                         <span class="info-details" data-lang="countryGdpPppInfo">
-                            Total: ${countryInfo.gdpPpp.total}
-                            <br> PerCapita: ${countryInfo.gdpPpp.perCapita}
+                            ${countryInfo.gdpPpp.total}
+                            <br>${countryInfo.gdpPpp.perCapita}
                         </span>
                     </div>
                     <!-- single tabel info -->
                     <div class="country-info-card">
                         <span class="info-title" data-lang="countryGdpNominalTitle">${countryInfo.gdpNominal.title}</span>
                         <span class="info-details" data-lang="countryGdpNominalInfo">
-                            Total: ${countryInfo.gdpNominal.total}
-                            <br> PerCapita: ${countryInfo.gdpNominal.perCapita}
+                            ${countryInfo.gdpNominal.total}
+                            <br>${countryInfo.gdpNominal.perCapita}
                         </span>
                     </div>
 

@@ -740,6 +740,46 @@ body {
           padding: 25px;
           border-radius: 20px;
           margin-bottom: 25px; }
+  .main-app .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 100px; }
+    .main-app .about-wrapper .about-title {
+      color: #d43939;
+      font-size: 25px;
+      margin: 10px 0; }
+    .main-app .about-wrapper .about-description {
+      font-size: 15px;
+      line-height: 2;
+      text-align: justify;
+      margin: 15px 0; }
+    .main-app .about-wrapper .gcc-partner-title {
+      font-size: 25px;
+      color: #d43939;
+      margin-top: 35px;
+      margin-bottom: 20px; }
+    .main-app .about-wrapper .partners {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px; }
+      .main-app .about-wrapper .partners .partner-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .main-app .about-wrapper .partners .partner-card a {
+          display: block;
+          margin-bottom: 5px; }
+        .main-app .about-wrapper .partners .partner-card img {
+          width: 130px;
+          height: 130px;
+          margin-bottom: 10px; }
+        .main-app .about-wrapper .partners .partner-card h3 {
+          font-size: 20px; }
 
 .box-shadow {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px;
@@ -957,6 +997,8 @@ body {
     flex-direction: column; }
     .main-app .explorer-main-business .explorer-heading .explorer-search-field {
       grid-template-columns: repeat(1, 1fr); }
+  .main-app .about-wrapper .partners {
+    grid-template-columns: repeat(2, 1fr); }
   .country-info-wrapper {
     min-width: 800px;
     width: 800px; } }
@@ -1000,6 +1042,8 @@ body {
     .main-app .main-main-wrapper .country-flags-wrapper .country-flag-card {
       width: 60px;
       height: 35px; }
+  .main-app .about-wrapper .partners {
+    grid-template-columns: repeat(1, 1fr); }
   .country-info-wrapper {
     min-width: 470px;
     width: 490px; }
@@ -1043,11 +1087,11 @@ body {
   .main-app .main-main-wrapper .logo-wrapper img {
     width: 275px; }
   .main-app .main-main-wrapper .search-bar {
-    width: 410px;
+    width: 90%;
     border-radius: 15px; }
   .main-app .main-main-wrapper .country-flags-wrapper {
-    padding: 20px;
-    grid-gap: 15px; }
+    padding: 15px;
+    grid-gap: 10px; }
     .main-app .main-main-wrapper .country-flags-wrapper .country-flag-card {
       border-radius: 7px;
       width: 50px;

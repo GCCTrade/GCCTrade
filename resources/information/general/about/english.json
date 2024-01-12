@@ -1,0 +1,33 @@
+{
+  "aboutGcc": {
+    "aboutGccTitle": "About GCCTrade.net",
+    "gccPartnersTitle": "GCCTrade.net Partners",
+    "aboutGccDescription": "In today's competitive environment, product manufacturers, instead of limiting themselves to geographical boundaries, often seek foreign markets worldwide to enhance their income and explore more business opportunities. On the other hand, many countries, considering quantitative and qualitative parameters, search for the best products and top manufacturers to import the necessary goods. <br> Despite the significant potential for non-oil production and exports in Iran, many manufacturing companies in the country have missed out on the potential benefits of exporting their products due to insufficient knowledge of regional markets, lack of understanding of international trade transactions, and the inability to effectively introduce their products. <br> GCC Trade Dot Net, as a search engine for Iranian manufacturers, focuses on the GCC region, including six countries: Saudi Arabia, the United Arab Emirates, Kuwait, Qatar, Bahrain, and Oman. It serves as a platform to create awareness about Iranian products, streamline the export path for Iranian factories, and facilitate the import of products by traders in the GCC region, stepping into the international trade arena. <br> Iranian manufacturers can establish effective communication with potential buyers in GCC countries by creating a dedicated page on the GCC Trade Dot Net website. By uploading suitable content to introduce their products and providing contact information on their pages, they can significantly facilitate the process of connecting with buyers in the GCC countries. <br> On the other hand, organizations and traders in the GCC countries can easily establish connections with Iranian manufacturers by searching for their desired products on the GCC Trade Dot Net search engine."
+  },
+  "partnerCompanies": {
+    "companyOne": {
+      "title": "Partner One",
+      "website": "www.PartnerOne.com",
+      "email": "info@PartnerOne.com",
+      "phone": "+1 111 111-1111"
+    },
+    "companyTwo": {
+      "title": "Partner Two",
+      "website": "www.PartnerTwo.com",
+      "email": "info@PartnerTwo.com",
+      "phone": "+1 111 111-1111"
+    },
+    "companyThree": {
+      "title": "Partner Three",
+      "website": "www.PartnerThree.com",
+      "email": "info@PartnerThree.com",
+      "phone": "+1 111 111-1111"
+    },
+    "companyFour": {
+      "title": "Partner Four",
+      "website": "www.PartnerFour.com",
+      "email": "info@PartnerFour.com",
+      "phone": "+1 111 111-1111"
+    }
+  }
+}

@@ -33,6 +33,14 @@ async function renderPage(pathname) {
 
             // console.log('check2');
             break;
+        case "/about":
+            page = "/about";
+            aboutPageMaker();
+            toTopNavigator();
+
+            // console.log('check2');
+            break;
+
         // Add more cases for other paths
         default:
             // console.log('check3');
@@ -330,112 +338,6 @@ function indexPageMaker() {
     }
 
 
-
-
-
-
-    // const countryPopupWrapper = document.createElement('div');
-    // countryPopupWrapper.classList.add("country-info-wrapper", "box-shadow");
-    // countryPopupWrapper.innerHTML = `
-    //     <div class="country-info-close">
-    //         <h3 data-lang="countryName">${name}</h3>
-
-    //         <i class="fa fa-times"></i>
-    //     </div>
-    //     <div class="country-info">
-
-    //         <div class="country-info-table">
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryCapitalTitle">Capital</span>
-    //                 <span class="info-details" data-lang="countryCapitalInfo">Muscat</span>
-    //             </div>
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryAreaTitle">Area</span>
-    //                 <span class="info-details" data-lang="countryAreaInfo">309,500 km2 (119,500 sq mi)</span>
-    //             </div>
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryPopulationTitle">Population</span>
-    //                 <span class="info-details" data-lang="countryPopulationInfo">
-    //                     Total: 2021 estimate: 4,520,471 (125th)
-    //                     <br> Density: 15/km2 (38.8/sq mi) (177th)
-    //                 </span>
-    //             </div>
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryGdpPppTitle">GDP (PPP)</span>
-    //                 <span class="info-details" data-lang="countryGdpPppInfo">
-    //                     Total: 2023 estimate: $200.295 billion (78th)
-    //                     <br> PerCapita: $39,336 (71st)
-    //                 </span>
-    //             </div>
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryGdpNominalTitle">GDP (Nominal)</span>
-    //                 <span class="info-details" data-lang="countryGdpNominalInfo">
-    //                     Total:2023 estimate: $108.282 billion (66th)
-    //                     <br> PerCapita: $21,265 (55th)
-    //                 </span>
-    //             </div>
-
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryHdiTitle">HDI</span>
-    //                 <span class="info-details" data-lang="countryHdiInfo">0.816 very high (54th)</span>
-    //             </div>
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryCurrencyTitle">Currency</span>
-    //                 <span class="info-details" data-lang="countryCurrencyInfo">Omani rial (OMR)</span>
-    //             </div>
-    //             <!-- single tabel info -->
-    //             <div class="country-info-card">
-    //                 <span class="info-title" data-lang="countryCurrencyTitle">Time Zone</span>
-    //                 <span class="info-details" data-lang="countryCurrencyInfo">UTC+4 (GST)</span>
-    //             </div>
-
-    //         </div>
-    //         <div class="country-map">
-    //             <img src="resources/images/map-oman.png" alt="map of Oman">
-    //         </div>
-    //     </div>
-    // `
-    // document.body.appendChild(countryPopupWrapper);
-
-    // //close icon and its event
-    // const closeIcon = countryPopupWrapper.querySelector('.fa-times');
-    // const closePopup = () => {
-    //     countryPopupWrapper.remove(); // Remove the popup from the DOM
-    // };
-
-    // closeIcon.addEventListener('click', (event) => {
-    //     event.stopPropagation();
-    //     closePopup();
-    // });
-
-    // // Event listener to close the popup when clicking outside of it
-    // document.addEventListener('mousedown', (event) => {
-    //     setTimeout(() => {
-    //         const isClickInsidePopup = countryPopupWrapper.contains(event.target);
-    //         if (!isClickInsidePopup) {
-    //             closePopup();
-    //         }
-    //     }, 0);
-    // });
-
-    // // Event listener to close the popup on "Escape" key press
-    // document.addEventListener('keydown', (event) => {
-    //     if (event.key === 'Escape') {
-    //         closePopup();
-    //     }
-    // });
-
-    // console.log(countryPopupWrapper);
-
-    // }
-
     // Function to show the category wrapper and toggle buttons
     function showCategoryWrapper() {
         const categoryDropdown = document.querySelector('.main-main-wrapper .dropdown-content');
@@ -567,7 +469,8 @@ function indexPageMaker() {
     // go to about page button add event listener
     const aboutButton = document.querySelector(`.about-button`);
     aboutButton.addEventListener(`click`, () => {
-        notification('Will Available soon')
+        history.pushState(null, null, `/about`);
+        renderPage(`/about`);
     })
 
 
@@ -578,6 +481,7 @@ function indexPageMaker() {
 /////////////////////////////////////////////////////////// explorer page maker
 
 function explorerPageMaker() {
+
     // explorer page - header area
     headeApp.classList.add('theme-reverse');
     headeApp.classList.remove('theme');
@@ -617,9 +521,6 @@ function explorerPageMaker() {
         </div>
     </nav>
 `;
-
-
-
     // explorer page - main area
     mainApp.classList.add(`theme`);
     mainApp.innerHTML = `
@@ -1627,6 +1528,123 @@ function youtubeVideoLoader(vID) {
 }
 
 
+// about page maker /////////////////////////////////////////////////////////////
+function aboutPageMaker() {
+    // About page - header area
+    headeApp.classList.add('theme-reverse');
+    headeApp.classList.remove('theme');
+    headeApp.innerHTML = `
+    <nav class="main-header-nav  explorer-header-nav ">
+        <div class="nav-logo">
+            <img src="resources/images/gcctrade-logo-light.svg" alt="GCC Trade Logo" class="nav-logo-img" />
+        </div>
+
+        <div class="nav-tools theme-text-reverse">
+                    <!--  <div class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</div> -->
+        <a href="https://forms.gle/ncpQ5USeTEgTYA6g8" target="_blank" class="button-transparent theme-text-reverse" data-lang="joinAsProducer">Join As Producer</a>
+           <i class="fa fa-search business-search-icon theme-text-inverse"></i>
+             <!-- languages -->
+                        <div class="language-wrapper">
+                            <span class="theme-reverse language-button-container">
+                                <span class="language-button theme" data-lang="language">EN</span>
+                            </span>
+                            <div class="languages theme-reverse box-shadow ">
+                                <span data-lang="english" class="lang-item">English</span>
+                                <span data-lang="persian" class="lang-item">Persian</span>
+                                <span data-lang="arabic" class="lang-item">Arabic</span>
+                            </div>
+                        </div>
+                <!--
+                    <div class="language-wrapper">
+                        <i class="fa fa-globe language-button"></i>
+                        <div class="languages">
+                            <span data-lang="persian" class="lang-item">Persian</span>
+                            <span data-lang="english" class="lang-item">English</span>
+                            <span data-lang="arabic" class="lang-item">Arabic</span>
+                        </div>
+                    </div>
+                -->
+            <i class="fa fa-moon  dark-button-theme"></i>
+            <i class="fa fa-sun  light-button-theme"></i>
+        </div>
+    </nav>
+            `;
+
+
+
+    language = localStorage.getItem('language');
+    const jsonFile = `resources/information/general/about/${language}.json`;
+    fetch(jsonFile)
+        .then(response => response.json())
+        .then(data => {
+
+            // console.log(data.partnerCompanies)
+
+            // main page - main area
+            mainApp.classList.add(`theme`);
+            mainApp.innerHTML = `
+
+                            <div class="about-wrapper">
+                                    <h2 class="about-title" data-lang="aboutGccTitle">${data.aboutGcc.aboutGccTitle}</h2>
+                                    <p class="about-description box-shadow" data-lang="aboutGccDescription">${data.aboutGcc.aboutGccDescription}</p>
+
+                                    <h3 data-lang="gccPartnersTitle" class="gcc-partner-title">${data.aboutGcc.gccPartnersTitle}</h3>
+
+                                    <div class="partners">
+
+                                    </div>
+                                </div>
+                            `;
+
+            const partnersContainer = document.querySelector(".partners")
+            // const partnerKeys = Object.keys(data);
+
+            const partnerCompanies = data.partnerCompanies;
+
+            Object.keys(partnerCompanies).forEach(partnerKey => {
+                const partner = partnerCompanies[partnerKey];
+                partnersContainer.innerHTML += `
+                <div class="partner-card box-shadow">
+                    <figure>
+                        <img src="resources/images/${partnerKey}.png" alt="${partner.title} logo">
+                        <figcaption>
+                            <h3 data-lang="${partnerKey}">${partner.title}</h3>
+                            <a href="${partner.website}" target="_blank">${partner.website}</a>
+                            <a href="mailto:${partner.email}">${partner.email}</a>
+                            <a href="tel:${partner.phone}">${partner.phone}</a>
+                        </figcaption>
+                    </figure>
+                </div>`;
+            });
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+
+
+
+
+
+
+
+
+    // nav logo event listener
+    const navLogoWrapper = document.querySelector(`.nav-logo`);
+    navLogoWrapper.addEventListener('click', () => {
+        history.pushState(null, null, `/`);
+        renderPage('/');
+    });
+
+
+    // explorer button click event
+    const explorerButtonNav = document.querySelector(`.business-search-icon`);
+    explorerButtonNav.addEventListener('click', function () {
+        history.pushState(null, null, `/explorer`);
+        renderPage(`/explorer`);
+
+    })
+    appInit();
+
+
+}
 
 
 
@@ -1962,17 +1980,20 @@ function languageJS() {
             languageInitializer(language);
             hideLanguageList();
 
-            // // Revoke page maker
-            // if (page === `/`) {
-            //     indexPageMaker();
-            // } else if (page === '/explorer') {
-            //     // dropDownMaker();
-            //     explorerPageMaker();
-            //     dropdownCloser();
-            // } else {
-            //     history.pushState(null, null, `/${username}`);
-            //     renderPage(`/${username}`)
-            // }
+            // Revoke page maker///////////////////////////////
+            if (page === `/`) {
+                indexPageMaker();
+            } else if (page === '/explorer') {
+                // dropDownMaker();
+                explorerPageMaker();
+                dropdownCloser();
+            } else if (page === '/about') {
+                // dropDownMaker();
+                aboutPageMaker();
+            } else {
+                history.pushState(null, null, `/${username}`);
+                renderPage(`/${username}`)
+            }
 
         });
     });
@@ -2012,7 +2033,7 @@ function languageJS() {
                     'allProduct': data[language].products,
                     'selected': data[language].selected,
                 };
-                console.log(titleOfDropdowns);
+                // console.log(titleOfDropdowns);
 
 
             })

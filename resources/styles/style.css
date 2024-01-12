@@ -1057,6 +1057,10 @@ body {
         order: 2; } }
 
 @media (max-width: 500px) {
+  .header-app .button-transparent {
+    padding: 8px 10px;
+    text-wrap: nowrap;
+    min-width: 100px; }
   .main-app .business-wrapper .header-content {
     flex-direction: column; }
     .main-app .business-wrapper .header-content .header-profile {

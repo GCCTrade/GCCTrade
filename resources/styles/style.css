@@ -109,7 +109,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 5px 12px;
+        margin: 5px 5px;
         position: relative; }
         .header-app .main-header-nav .nav-tools .language-wrapper .language-button-container {
           display: flex;
@@ -151,7 +151,7 @@ body {
     align-items: center;
     cursor: pointer; }
     .header-app .explorer-header-nav .nav-logo img {
-      width: 150px; }
+      width: 135px; }
 
 .main-app {
   width: 100%;
